@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Importing fonts */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 body {
@@ -13,13 +13,13 @@ header {
     margin-left: -30px;
     margin-right: -30px;
     padding-top: 40px;
-    padding-bottom: 20px
+    padding-bottom: 40px
 }
 
 header h1{
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 80px
 }
 
@@ -29,7 +29,7 @@ header p {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 30px;
-    margin-top: -10px
+    margin-top: -50px
 }
 
 /* Formatação do menu */
@@ -39,7 +39,7 @@ header p {
     margin-right: -30px;
     margin-top: -30px;
     display: block;
-    background-color: rgb(77, 76, 76)
+    background-color: rgb(40, 42, 63)
 }
 
 #menu ul {
@@ -51,7 +51,7 @@ header p {
 /* Formatação dos itens do menu */
 #menu li {
     display: inline-block;
-    background-color: rgb(77, 76, 76);
+    background-color: rgb(40, 42, 63)
     color: white;
     margin-right: 1cm;
     padding: 10px;
@@ -65,11 +65,5 @@ header p {
 
 #menu a:hover {
     text-decoration: none;
-    color: rgb(85, 130, 197)
-}
-
-/* Caminho */
-#caminho p {
-    color: rgb(78, 78, 78);
-    font-size: 20px;
+    color: rgb(119, 140, 167)
 }
