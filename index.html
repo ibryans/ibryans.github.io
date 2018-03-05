@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- Codigo pro menu -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+
+    //Diz para o navegador o que será carregado no momento em que a página é acessada.
+    jQuery("document").ready(function($){
+    
+    //Elemento que vai receber os eventos.
+    var nav = $('#menu');
+
+    //Ao rolar a página, a função será executada.
+    $(window).scroll(function () {
+        //Se o tamanho da parte rolada for maior que 200px (pixels) ->
+        if ($(this).scrollTop() > 200) {
+            nav.addClass("scrolled_menu"); //Aplica a classe scrolled_menu no elemento .menu
+        } else {
+            nav.removeClass("scrolled_menu"); //Remove a classe scrolled_menu no elemento .menu
+        }
+    });
+
+    });
+
+</script>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css"  href="style.css" />
@@ -9,22 +33,23 @@
 </head>
 
 <body>
+
+    <!-- Menuzinho -->
+    <div id="menu">
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="#">Sobre</a> </li>
+                <li> <a href="#">Projetos</a> </li>
+                <li> <a href="#">Currículo</a> </li>
+            </ul>
+    </div>
+
     <header style = "background-image:url(imgs/header-wallpaper1.png)">
 
         <h1>Bryan Santos</h1>
         <p> Software student </p> 
 
     </header>
-
-    <!-- Menuzinho -->
-    <div id="menu">
-        <ul>
-            <li> <a href="index.html"> Home </a> </li>
-            <li> <a href="about.html">Sobre</a> </li>
-            <li> <a href="projects.html">Projetos</a> </li>
-            <li> <a href="curriculum.html">Currículo</a> </li>
-        </ul>
-    </div>
 
     <!-- Descrição sobre mim -->
     <div id="about">
@@ -37,7 +62,7 @@
             <h3> Bryan Santos Oliveira </h3>
             <hr>
             <p> Estudante de Desenvolvimento de sistemas, cursando o ensino técnico integrado ao médio no Colégio Técnico da UFMG. 16 anos, jogo um basquete e faço uns projetos legais nas horas vagas.
-            <br> <br> <br> <input type="button" value="LEIA MAIS" class="sobre-mim-button" onclick="alert('O site ainda está esm construção, não acabei essa parte :)')">
+            <br> <br> <br> <input type="button" value="LEIA MAIS" class="sobre-mim-button" onclick="alert('O site ainda está em construção, não acabei essa parte :)')">
         </div>
 
     </div>
