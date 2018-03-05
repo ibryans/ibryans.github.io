@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css"  href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css-style/style.css" />
+    <link rel="stylesheet" type="text/css" href="css-style/menu.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
-    <script type='text/javascript' src="scripts/link-ancora.js"></script>
+
     <title>Bryan Santos</title>
 </head>
 
@@ -18,9 +18,9 @@
                 <!-- Aqui irei colocar uma imagem que vai ser a minha foto + Bryan Santos -->
                 <li id="Nome">Bryan Santos</li>
                 <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="#about" class=".scroll">Sobre</a> </li>
-                <li> <a href="#projects" class=".scroll">Projetos</a> </li>
-                <li> <a href="#curriculum" class=".scroll">Currículo</a> </li>
+                <li> <a href="#about">Sobre</a> </li>
+                <li> <a href="#projects">Projetos</a> </li>
+                <li> <a href="#curriculum">Currículo</a> </li>
             </ul>
     </div>
 
@@ -32,8 +32,8 @@
     </header>
 
     <div id="menu-lateral">
-        <a href="https://www.github.com/ibryans" target="_blank"> <i class="fab fa-github fa-3x"></i></a> <br>
-        <a href="https://www.facebook.com/bryan.santos.5454"> <i class="fab fa-facebook fa-3x"></i> </a> <br>
+        <a href="https://www.github.com/ibryans" target="_blank"> <i class="fab fa-github fa-2x"></i></a> <br>
+        <a href="https://www.facebook.com/bryan.santos.5454"> <i class="fab fa-facebook fa-2x"></i> </a> <br>
         <a href="https://"></a>
     </div>
 
@@ -48,15 +48,26 @@
             <h3> Bryan Santos Oliveira </h3>
             <hr>
             <p> Estudante de Desenvolvimento de sistemas, cursando o ensino técnico integrado ao médio no Colégio Técnico da UFMG. 16 anos, jogo um basquete e faço uns projetos legais nas horas vagas.
-            <br> <br> <br> <input type="button" value="LEIA MAIS" class="sobre-mim-button" onclick="alert('O site ainda está em construção, não acabei essa parte :)')">
+            <br> <br> <input type="button" value="LEIA MAIS" class="sobre-mim-button" onclick="alert('O site ainda está em construção, não acabei essa parte :)')">
         </div>
 
     </div>
 
+    <!-- Projetos -->
     <div id="projects" class="link">
         <h2 id="titulo">Projetos</h2>
-        <br><br><br><br><br></br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </div>
+
+    <!-- Curriculum -->
+    <div id="curriculum" class="link">
+        <h2> Currículo </h2> <br> <br> <br>
+        <a href="https://www.dropbox.com/home?preview=CV+-+Bryan+Santos.pdf" target="_blank"><input type="button" id="btn-curriculo" value="Acesse o PDF" onclick="alert('Você será redirecionado para um site externo')"></input></a>
+    </div>
+
+    <!-- Área de scripts -->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script type='text/javascript' src="scripts/link-ancora.js"></script>
 
 </body>
 
