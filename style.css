@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /* Importing fonts */
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Coda');
-@import url('https://fonts.googleapis.com/css?family=McLaren');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+
 
 body {
     margin-left: 30px;
@@ -16,6 +17,7 @@ body h3 { text-transform: uppercase; font-size: 150% }
 header {
     margin-left: -30px;
     margin-right: -30px;
+    margin-top: -10px;
     padding-top: 50px;
     padding-bottom: 40px
 }
@@ -36,34 +38,24 @@ header p {
     margin-top: -50px
 }
 
-/* Formatação do menu */
-
-.scrolled_menu {
-
-    width: 100%;
-    z-index: 9999;
-    position: fixed;
-    padding: -10px;
-    background-color: rgb(44, 44, 44)
-}
-
-.scrolled_menu li {
-    padding: 0px
-}
 
 #menu {
-    margin: -1.2em -30px -20px -30px;
-    display: block;
-    background-color: rgb(44, 44, 44);
-    transition: padding 0.5s
+    display:block;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: rgb(44, 44, 44);
+    opacity: 0.8;
+    z-index: 9999;
+    text-align: center
 }
 
 #menu ul {
     list-style: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 120%
+    text-align: right;
+    font-family: 'Coda', cursive;
+    font-size: 100%
 }
 
 /* Formatação dos itens do menu */
@@ -72,8 +64,16 @@ header p {
     display: inline-block;
     background-color: rgb(44, 44, 44);
     color: white;
-    margin-right: 1cm;
-    padding: 10px;
+    margin-right: 2cm;
+    padding: -30px
+}
+
+#Nome { 
+    float: left; 
+    display: inline-block;  
+    font-family: 'Bad Script', cursive; 
+    padding: -10px; 
+    font-size: 130%
 }
 
 #menu a {
@@ -82,18 +82,30 @@ header p {
     transition: color 0.2s
 }
 
-#menu a:hover {
+#menu a:hover { color: rgb(119, 140, 167) } 
+
+#menu a:active { color: rgb(119, 140, 167) }
+
+/******** Menu lateral ********/
+
+#menu-lateral {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+#menu-lateral a{
     text-decoration: none;
-    color: rgb(119, 140, 167)
+    color: black
 }
 
 /************ Área "ABOUT" ***************/
 
 #about {
     background-color: rgb(214, 214, 214);
-    display: flex;
     margin: -15px -30px;
-    padding: 8% 20%;
+    padding: 5% 15%;
+    align-items: center
 }
 
 #imagem-perfil {
@@ -101,8 +113,10 @@ header p {
     float: left;
 }
 
+#imagem-perfil img { border-radius: 50%; margin-right: 1cm; z-index: 1 }
+
 #descricao {
-    margin-left: 10%; 
+    margin-top: 10px; 
     font-size: 20px;
     font-family: 'Coda', cursive
 }
@@ -130,14 +144,45 @@ header p {
 /************** Área dos projetos **************/
 
 #projects {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(73, 138, 150);
     margin: -15px -30px;
     padding: 10% 20%;
 }
 
-#projects h3 {
+#projects h2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Coda', cursive;
+    font-size: 200%;
     margin-top: -10%;
+}
+
+
+/* Efeito na hora do carregamento da página */
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 0.5s ease-in-out;
+    -moz-animation: fadeIn 0.5s ease-in-out;
+    -o-animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
 }

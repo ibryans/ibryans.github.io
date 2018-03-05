@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- Codigo pro menu -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script type="text/javascript">
-
-    //Diz para o navegador o que será carregado no momento em que a página é acessada.
-    jQuery("document").ready(function($){
-    
-    //Elemento que vai receber os eventos.
-    var nav = $('#menu');
-
-    //Ao rolar a página, a função será executada.
-    $(window).scroll(function () {
-        //Se o tamanho da parte rolada for maior que 200px (pixels) ->
-        if ($(this).scrollTop() > 200) {
-            nav.addClass("scrolled_menu"); //Aplica a classe scrolled_menu no elemento .menu
-        } else {
-            nav.removeClass("scrolled_menu"); //Remove a classe scrolled_menu no elemento .menu
-        }
-    });
-
-    });
-
-</script>
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css"  href="style.css" />
-
-    <title>Bryan's website</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script type='text/javascript' src="scripts/link-ancora.js"></script>
+    <title>Bryan Santos</title>
 </head>
 
-<body>
+<body class="fadeIn">
 
     <!-- Menuzinho -->
     <div id="menu">
             <ul>
+                <!-- Aqui irei colocar uma imagem que vai ser a minha foto + Bryan Santos -->
+                <li id="Nome">Bryan Santos</li>
                 <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="#">Sobre</a> </li>
-                <li> <a href="#">Projetos</a> </li>
-                <li> <a href="#">Currículo</a> </li>
+                <li> <a href="#about" class=".scroll">Sobre</a> </li>
+                <li> <a href="#projects" class=".scroll">Projetos</a> </li>
+                <li> <a href="#curriculum" class=".scroll">Currículo</a> </li>
             </ul>
     </div>
 
@@ -51,8 +31,14 @@
 
     </header>
 
+    <div id="menu-lateral">
+        <a href="https://www.github.com/ibryans" target="_blank"> <i class="fab fa-github fa-3x"></i></a> <br>
+        <a href="https://www.facebook.com/bryan.santos.5454"> <i class="fab fa-facebook fa-3x"></i> </a> <br>
+        <a href="https://"></a>
+    </div>
+
     <!-- Descrição sobre mim -->
-    <div id="about">
+    <div id="about" class="link">
 
         <div id="imagem-perfil">
             <img src="imgs/profile-img.jpg" width="275" height="275"> </img>
@@ -67,8 +53,9 @@
 
     </div>
 
-    <div id="projects">
+    <div id="projects" class="link">
         <h2 id="titulo">Projetos</h2>
+        <br><br><br><br><br></br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
 </body>
