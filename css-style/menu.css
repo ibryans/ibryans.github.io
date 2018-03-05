@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+/* Estilização do Menu */
+
+#menu {
+    display:block;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: rgb(44, 44, 44);
+    opacity: 0.8;
+    z-index: 9999;
+    text-align: center;
+}
+
+#menu ul {
+    list-style: none;
+    text-align: right;
+    font-family: 'Coda', cursive;
+    font-size: 100%;
+    padding: -10px
+}
+
+/* Formatação dos itens do menu */
+
+#menu li {
+    display: inline-block;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-right: 2cm;
+}
+
+#Nome { 
+    float: left; 
+    display: inline-block;  
+    font-family: 'Bad Script', cursive; 
+    padding: -10px; 
+    font-size: 130%;
+    margin-top: -10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s
+}
+
+#menu a:hover { color: rgb(119, 140, 167) } 
+
+#menu a:active { color: rgb(119, 140, 167) }
+
+/******** Menu lateral ********/
+
+#menu-lateral {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+#menu-lateral a{
+    text-decoration: none;
+    color: black
+}
