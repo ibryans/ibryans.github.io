@@ -8,22 +8,19 @@
 /* Estilização do Menu */
 
 #menu {
-    display:block;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background: rgb(44, 44, 44);
-    opacity: 0.8;
+    background: transparent;
     z-index: 9999;
     text-align: center;
 }
 
 #menu ul {
+    margin-top: -6%;
+    margin-bottom: 6%;
     list-style: none;
     text-align: right;
     font-family: 'Coda', cursive;
     font-size: 100%;
+    background: transparent;
     padding: -10px
 }
 
@@ -31,9 +28,10 @@
 
 #menu li {
     display: inline-block;
-    background-color: rgb(44, 44, 44);
+    background: transparent;
     color: white;
     margin-right: 2cm;
+    font-size: 150%
 }
 
 #Nome { 
@@ -51,9 +49,9 @@
     transition: color 0.2s
 }
 
-#menu a:hover { color: rgb(119, 140, 167) } 
+#menu a:hover { color: rgb(66, 66, 66) } 
 
-#menu a:active { color: rgb(119, 140, 167) }
+#menu a:active { color: rgb(65, 65, 65) }
 
 /******** Menu lateral ********/
 
