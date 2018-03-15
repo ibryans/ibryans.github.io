@@ -5,7 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Coda');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
+@media screen and(max-width:1200px){}
+@media screen and(max-width:1024px){}
+@media screen and(max-width:768px){}
+@media screen and(max-width:600px){}
 
+img,embed,object,video {
+    max-width: 100%;
+}
 
 body {
     margin-left: 30px;
@@ -53,7 +60,7 @@ header p {
 
 #descricao {
     margin-top: 10px; 
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     font-family: 'Coda', cursive
 }
