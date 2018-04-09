@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+        <!-- Materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>Enduro - Coltec</title>
+    </head>
+
+    <body>
+        
+        <!-- Conteudo -->
+		<div class="content">
+        <div class="container">
+        <div class="row">
+        <div class="col s12 m10 offset-m1 l6 offset-l3 center-align">
+        <div class="valign-wrapper">
+
+            <!-- Card central -->
+            <div class="card z-depth-6">
+                <div class="card-content">
+
+                    <!-- Logo do coltec -->
+                    <spam id="logo-coltec" class="center-align"><img class="responsive-img" src="imgs/logo-coltec.png" height="30%" width="30%"></spam>
+
+                    <!-- Título -->
+                    <h3 class="center-align" id="title">Cadastro de equipes</h3>
+
+                    <!-- Botão de add participantes -->
+                    <div class="col s12"> 
+                            <button id="add_button" class="btn green" onclick="addParticipantes(this)"> 
+                                <i class="material-icons left">add_circle</i>
+                                Adicionar participante 
+                            </button> 
+                    </div>
+
+                    <!-- Formulário -->
+                    <form>
+
+                        <!-- Participantes -->
+                        <div id="conteudo">
+                            <div class="dados-participante">
+
+                                <div class="input-field col l6 m6 s12">
+                                    <input type="text" id="p-nome" disabled value="Nome do líder">
+                                </div>
+
+                                <div class="input-field col l6 m6 s12">
+                                    <input type="text" id="p-matricula" placeholder="Matrícula UFMG">                                
+                                </div>
+
+                                <hr class="divider col s4 offset-s4 center-align hide-on-med-and-up"></div>
+
+                            </div>  
+
+                            <!-- Botão de confirmação -->
+                            <a id="btn-prox" class="btn green waves-effect waves-light col s12" href="confirma-cadastro.html">Concluir</a>
+                        </div>
+
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <script src="js/add-participantes.js"></script>
+         
+    </body>
+</html>
