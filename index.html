@@ -3,9 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width" />
-    <link rel="stylesheet" type="text/css" href="css-style/style.css" />
-    <link rel="stylesheet" type="text/css" href="css-style/menu.css" />
+    <meta name="viewport" content="width= device-width"/>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+
+    <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title>Bryan Santos</title>
@@ -13,57 +19,119 @@
 
 <body class="fadeIn">
 
-    <header style = "background-image:url(imgs/header-wallpaper1.png)">
+    <header>
 
-        <!-- Menuzinho -->
-        <div id="menu">
-            <ul>
-                <li id="Nome">Bryan Santos</li>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="#about">Sobre</a> </li>
-                <li> <a href="https://github.com/ibryans" target="_blank">Projetos</a> </li>
-                <li> <a href="bracket/" target="_blank">Bracket</a> </li>
-                <li> <a href="https://www.dropbox.com/s/7waotzbzk8k3rww/CV%20-%20Bryan%20Santos.pdf?dl=0" target="_blank">Currículo</a> </li>
-            </ul>
-        </div>
+        <nav class="navbar is-warning is-fixed-top">
 
-        <h1>Bryan Santos</h1>
-        <p> Software student </p> 
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+
+                <div class="navbar-start">
+                    <a class="navbar-item has-text-white" href="index.html">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+
+                    <a class="navbar-item has-text-white" href="#sobre">
+                        <span>
+                            Sobre
+                        </span>
+                    </a>
+
+                    <a class="navbar-item has-text-white" href="#projetos"> 
+                        <span>
+                            Projetos
+                        </span>
+                    </a>
+
+                    <a class="navbar-item has-text-white" href="#curriculo">                        
+                        <span>
+                            Currículo
+                        </span>
+                        <!-- https://www.dropbox.com/s/7waotzbzk8k3rww/CV%20-%20Bryan%20Santos.pdf?dl=0 -->
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-lg fa-github"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-lg fa-linkedin"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-lg fa-facebook"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-transparent has-text-centered " style="padding: 10% 0 8% 0">
+            <div class="hero-body">
+                <div class="container ">
+                    <h1 class="title has-text-white is-size-1">
+                        E ai! Sou o <span class="has-text-info">Bryan</span>
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                        Desenvolvedor e estudante de tecnologia
+                    </h2>
+                    <a class="button is-link">Contate-me!</a>
+                </div>
+            </div>
+        </section>
 
     </header>
 
-    <!-- <div id="menu-lateral">
-        <a href="https://www.github.com/ibryans" target="_blank"> <i class="fab fa-github fa-2x"></i></a> <br>
-        <a href="https://www.facebook.com/bryan.santos.5454"> <i class="fab fa-facebook fa-2x"></i> </a> <br>
-        <a href="https://"></a>
-    </div> -->
+    
+    <div class="content" style="padding: 5% 0 5% 0">
 
-    <!-- Descrição sobre mim -->
-    <div id="about" class="link">
+        <div class="columns">
+            <div class="column is-5" style="padding: 0 5% 0 5%">
+                <img src="includes/imgs/profile.jpg">
+            </div>
 
-        <div id="imagem-perfil">
-            <img src="imgs/profile-img.jpg" width="275" height="275"> </img>
-        </div>
-
-        <div id="descricao">
-            <h3> Bryan Santos Oliveira</h3>
-            <hr id="sublinhado">
-            <p> Estudante de Desenvolvimento de sistemas, cursando o ensino técnico integrado ao médio no Colégio Técnico da UFMG. 16 anos, jogo um basquete e faço uns projetos legais nas horas vagas.</p>
+            <div class="column is-7">
+                <h1 class="title has-text-black">
+                    Sobre mim
+                </h1>
+                <p>
+                    Olá! Meu nome é <b>Bryan Santos</b>, sou um jovem estudante e desenvolvedor, que busca sempre acompanhar o mundo da tecnologia e estar sempre por dentro do que envolve a programação.
+                </p>
+                <p>
+                    Nasci em Minas Gerais, Brasil, e comecei o meu interesse por programação um pouco antes de entrar no ensino médio, que foi onde me aprofundei na área fazendo um curso técnico em desenvolvimento de sistemas, no Colégio Técnico da UFMG. Por lá aprendi a desenvolver aplicações desktop, scripts, sites, aplicativos móveis, dentro de outras tecnologias.
+                </p>
+                <p>
+                    <b>Telefone: </b> (31) 98231-0492 &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace;
+                    <b>E-mail: </b> bryans0701@gmail.com
+                </p>
+                <p>
+                    <a class="button is-link" style="padding: 22px"> 
+                        <span class="icon">
+                            <i class="fas fa-download"></i>
+                        </span>
+                        <span>
+                            Baixar CV
+                        </span>
+                    </a>
+                </p>
+            </div>
         </div>
 
     </div>
-
-    <!-- Projetos
-    <div id="projects" class="link">
-        <h2 id="titulo">Projetos</h2>
-
-    </div> -->
-
-    <!-- Curriculum
-    <div id="curriculum" class="link">
-        <h2> Currículo </h2> <br> <br> <br>
-        <a href="https://www.dropbox.com/s/7waotzbzk8k3rww/CV%20-%20Bryan%20Santos.pdf?dl=0" target="_blank"><input type="button" id="btn-curriculo" value="Acesse o PDF" onclick="alert('Você será redirecionado para um site externo')"></input></a>
-    </div> -->
+    
 
     <!-- Área de scripts -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>

@@ -24,7 +24,7 @@ body {
 }
 
 .image-top img{
-    width: 80%;
+    width: 200px;
     height: 70px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -45,7 +45,7 @@ body {
 }
 
 .image-bottom img {
-    width: 80%;
+    width: 200px;
     height: 70px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;

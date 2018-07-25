@@ -1,0 +1,17 @@
+.navbar-menu a.navbar-item:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(75, 42, 194, 0.575) !important;
+    transition: 0.3s;
+}
+
+header {
+    background-image: url("../includes/imgs/header-wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-image: url("../includes/imgs/header-wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
