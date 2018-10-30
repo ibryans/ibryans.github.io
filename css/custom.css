@@ -6,12 +6,18 @@
 
 header {
     background-image: url("../includes/imgs/header-wallpaper1.jpg");
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 nav {
     background-image: url("../includes/imgs/header-wallpaper1.jpg");
-    background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.text {
+    size: 100px
+}
+
+.profile {
+    border-radius: 50%
 }
