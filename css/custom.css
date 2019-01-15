@@ -1,6 +1,6 @@
 .navbar-menu a.navbar-item:hover {
     color: rgb(255, 255, 255) !important;
-    background-color: rgba(75, 42, 194, 0.575) !important;
+    background-color: rgba(95, 95, 95, 0.575) !important;
     transition: 0.3s;
 }
 
@@ -19,5 +19,12 @@ nav {
 }
 
 .profile {
-    border-radius: 50%
+    border-radius: 50%;
+}
+
+.customized-hr {
+    border: 0; 
+    height: 0; 
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
