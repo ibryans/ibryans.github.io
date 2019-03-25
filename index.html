@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- Header -->
     <header>
 
         <nav class="navbar is-fixed-top">
@@ -43,11 +44,13 @@
                         </span>
                     </a>
 
-                    <!-- <a class="navbar-item has-text-white" href="#projetos"> 
+                    <!-- 22/02 - Descomentei projetos -->
+
+                    <a class="navbar-item has-text-white" href="#projetos"> 
                         <span>
                             Projetos
                         </span>
-                    </a> -->
+                    </a>
 
                     <a class="navbar-item has-text-white" target="_blank" href="includes/Bryan Santos - CV.pdf">                        
                         <span>
@@ -90,17 +93,20 @@
         </section>
 
     </header>
+    <!-- Fim do header -->
 
-    
+
     <div class="content" style="padding: 5%">
 
+
+        <!-- Sobre mim -->
         <div id="sobre" class="columns">
-            <div class="column is-5">
+            <div class="column is-4">
                 <img class="profile" src="includes/imgs/profile.jpg" width="320px">
             </div>
 
-            <div class="column is-7">
-                <h1 class="title has-text-black text">
+            <div class="column">
+                <h1 class="title text">
                     Sobre mim
                 </h1>
                 <p class="text">
@@ -116,17 +122,42 @@
             </div>
         </div>
 
-        <!-- <hr class="customized-hr">
 
-        <div id="projetos" class="columns">
+        <!-- Projetos -->
+        <div id="projetos" class="bd-focus">
 
-            <div class="column is-12">
-                <h1 class="title has-text-black has-text-centered">
-                    Projetos
-                </h1>
+            <div class="columns">
+                <div class="column is-12 has-text-centered">
+                    <h1 class="title">Projetos</h1>
+                </div>
             </div>
 
-        </div> -->
+            <div class="columns mt-3">
+                
+                <!-- Petfood -->
+                <a href="https://github.com/ibryans/petFood" target="_blank" class="column has-text-centered">
+                    <p class="title is-4">Petfood</p>
+                    <p class="subtitle is-6">Alimentação de pets</p>
+                    <img src="./includes/imgs/logo_petfood.png" alt="Logo Petfood" width="20%">
+                </a>
+                
+                <!-- Enduro -->
+                <a href="http://enduro-coltec.herokuapp.com" target="_blank" class="column has-text-centered">
+                    <p class="title is-4">Enduro - Coltec</p>
+                    <p class="subtitle is-6">Site para o Enduro a pé - Coltec</p>
+                    <img src="./includes/imgs/logo_enduro.png" alt="Logo Enduro" width="20%">
+                </a>
+
+                <!-- StoreGE -->
+                <a href="https://github.com/ibryans/StoreGE-mobile" target="_blank" class="column has-text-centered">
+                    <p class="title is-4">StoreGE</p>
+                    <p class="subtitle is-6">Sistema para gerenciamento de lojas</p>
+                    <img src="./includes/imgs/logo_storege.png" alt="Logo StoreGE" width="20%">
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
     
