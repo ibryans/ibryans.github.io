@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <title>Bryan Santos</title>
+    <title>Bryan Oliveira</title>
 </head>
 
 <body>
@@ -28,34 +28,28 @@
                 <span></span>
                 <span></span>
             </div>
-          
+                    
             <div id="navbarExampleTransparentExample" class="navbar-menu">
 
                 <div class="navbar-start">
                     <a class="navbar-item has-text-white" href="index.html">
-                        <span>
-                            Home
-                        </span>
+                        <span> Home </span>
                     </a>
 
                     <a class="navbar-item has-text-white" href="#sobre">
-                        <span>
-                            Sobre
-                        </span>
+                        <span> Sobre </span>
                     </a>
 
-                    <!-- 22/02 - Descomentei projetos -->
-
                     <a class="navbar-item has-text-white" href="#projetos"> 
-                        <span>
-                            Projetos
-                        </span>
+                        <span> Projetos</span>
+                    </a>
+
+                    <a class="navbar-item has-text-white" href="#xp"> 
+                        <span> Experiências</span>
                     </a>
 
                     <a class="navbar-item has-text-white" target="_blank" href="includes/Bryan Santos - CV.pdf">                        
-                        <span>
-                            Currículo
-                        </span>
+                        <span> Currículo </span>
                     </a>
                 </div>
 
@@ -79,11 +73,12 @@
             </div>
         </nav>
 
+        <!-- Seção do cabeçalho (imagem e nome) -->
         <section class="hero is-transparent has-text-centered " style="padding: 10% 0 8% 0">
             <div class="hero-body">
                 <div class="container ">
                     <h1 class="title has-text-white is-size-1">
-                        <span class="has-text-white">Bryan Santos</span>
+                        <span class="has-text-white">Bryan Oliveira</span>
                     </h1>
                     <h2 class="subtitle has-text-white">
                         Desenvolvedor e estudante de tecnologia
@@ -96,12 +91,12 @@
     <!-- Fim do header -->
 
 
-    <div class="content" style="padding: 5%">
+    <div class="content">
 
 
         <!-- Sobre mim -->
-        <div id="sobre" class="columns">
-            <div class="column is-4">
+        <div id="sobre" class="columns p-5">
+            <div class="column is-4 is-flex is-horizontal-centered">
                 <img class="profile" src="includes/imgs/profile.jpg" width="320px">
             </div>
 
@@ -110,65 +105,115 @@
                     Sobre mim
                 </h1>
                 <p class="text">
-                    Olá! Meu nome é <b>Bryan Santos</b>, sou um jovem estudante e desenvolvedor, que busca sempre acompanhar o mundo da tecnologia e estar sempre por dentro do que envolve a programação.
+                    Olá! Meu nome é <b>Bryan Santos Oliveira</b>, apenas um jovem estudante e desenvolvedor, que busca sempre acompanhar o mundo da tecnologia e tenta prover soluções para diversos problemas que afetam a vida das pessoas.
                 </p>
                 <p class="text">
                     Nasci em Minas Gerais, Brasil, e comecei o meu interesse por programação um pouco antes de entrar no ensino médio, que foi onde me aprofundei na área fazendo um curso técnico em desenvolvimento de sistemas, no Colégio Técnico da UFMG. Por lá aprendi a desenvolver aplicações web, desktop, aplicativos móveis, trabalhar com banco de dados, dentre outras tecnologias.
                 </p>
                 <p class="text">
-                    <p> <b>Telefone: </b> (31) 98231-0492 </p>
-                    <p> <b>E-mail: </b> bryans0701@gmail.com </p>
+                    <p> <b>E-mail: </b> bsantos.cpp@gmail.com </p>
                 </p>
             </div>
         </div>
 
-        <hr class="customized-hr"/>
-
         <!-- Projetos -->
-        <div id="projetos" class="bd-focus">
+        <section id="projetos" class="is-fullwidth">
+            <div class="bd-example">
 
-            <div class="columns">
-                <div class="column is-12 has-text-centered">
-                    <h1 class="title">Projetos</h1>
+                <section class="hero is-info">
+                    <div class="hero-body">
+                        <div class="container text-center">
+                            <h1 class="title">
+                                Projetos
+                            </h1>
+                            <h4 class="subtitle">
+                                Alguns projetos que fiz e contribui
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Petfood -->
+                <section class="columns mt-3 p-5 pb-0">
+                    <div class="column is-flex is-6 is-right-centered ph-2">
+                        <a href="https://github.com/ibryans/petFood" target="_blank" class="column has-text-right">
+                            <p class="title is-4">Petfood</p>
+                            <p class="subtitle is-6">Alimentação de pets</p>
+                            <img src="./includes/imgs/logo_petfood.png" alt="Logo Petfood" width="20%">
+                        </a>
+                    </div>
+                    <div class="column is-6 is-left-centered ph-2">
+                        <p>O <b>Petfood</b> foi um projeto desenvolvido como um trabalho no COLTEC - UFMG, que consistia em criar um aplicativo que controlasse um mecanismo para alimentação de cachorros, gatos, pets em geral. Fui responsável pela parte frontend do aplicativo, feito com java no Android Studio, e usando a integração como banco de dados pelo Firebase.</p>
+                        <p><a href="https://github.com/ibryans/petFood">Repositório no github</a> </p>
+                    </div>
+                </section>
+
+
+                <!-- Enduro -->
+                <section class="columns mt-5">    
+                    <div class="column is-flex is-6 is-left-centered ph-2">
+                        <a href="http://enduro-coltec.herokuapp.com" target="_blank" class="column has-text-right">
+                            <p class="title is-4">Enduro - Coltec</p>
+                            <p class="subtitle is-6">Site para o Enduro a pé - Coltec</p>
+                            <img src="./includes/imgs/logo_enduro.png" alt="Logo Enduro" width="20%">
+                        </a>
+                    </div>
+                    <div class="column is-6 has-text-left ph-2">
+                        <p>O <b>Enduro - Coltec</b> foi um projeto desenvolvido durante meu estágio no COLTEC - UFMG, onde fui responsável pela criação do site oficial do evento Enduro, que é uma atividade esportiva de competição que consiste em cumprir trechos de caminhada (trekking), mantendo a regularidade (distância/tempo) estabelecida na planilha de orientação. Desenvolvi a aplicação usando Node + express + MongoDB</p>
+                        <p><a href="http://enduro-coltec.herokuapp.com/">Ir para o site</a> </p>
+                    </div>
+                </section>
+
+
+                <!-- Sistema de Reservas do Coltec -->
+                <section class="columns mt-5">    
+                    <div class="column is-flex is-6 ph-2">
+                        <a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php" target="_blank" class="column has-text-right">
+                            <p class="title is-4">Reservas Coltec</p>
+                            <p class="subtitle is-6">Sistema para gerenciamento de reservas do colégio</p>
+                            <img src="./includes/imgs/logo_reservas.png" alt="Logo Reservas" width="20%">
+                        </a>
+                    </div>
+                    <div class="column is-6 has-text-left ph-2">
+                        <p>O <b>Sistema de Reservas</b> é um sistema agora utilizado por todo o coltec, que permite com que alunos e professores possam reservar algum espaço do colégio, seja uma quadra, auditório, salas, laboratórios, etc. Fazendo com que eliminamos o uso de papel e facilite a vida de todos que precisam. Foi desenvolvido para um trabalho de Desenvolvimento de Aplicações Web (DAW) pelo meu grupo.</p>
+                        <p><a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php">Ir para o site</a> </p>
+                    </div>
+                </section>
+
                 </div>
             </div>
 
-            <div class="columns mt-3">
-                
+        </section>
+
+
+        <!-- Área de experiências profissionais -->
+        <section id="xp" class="is-fullwidth mt-5">
+            <div class="bd-example">
+
+                <section class="hero is-info">
+                    <div class="hero-body">
+                        <div class="container text-center">
+                            <h1 class="title">
+                                Experiências Profissionais
+                            </h1>
+                            <h4 class="subtitle">
+                                Todos os lugares e projetos por onde trabalhei
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Petfood -->
-                <a href="https://github.com/ibryans/petFood" target="_blank" class="column has-text-centered">
-                    <p class="title is-4">Petfood</p>
-                    <p class="subtitle is-6">Alimentação de pets</p>
-                    <img src="./includes/imgs/logo_petfood.png" alt="Logo Petfood" width="20%">
-                </a>
-                
-                <!-- Enduro -->
-                <a href="http://enduro-coltec.herokuapp.com" target="_blank" class="column has-text-centered">
-                    <p class="title is-4">Enduro - Coltec</p>
-                    <p class="subtitle is-6">Site para o Enduro a pé - Coltec</p>
-                    <img src="./includes/imgs/logo_enduro.png" alt="Logo Enduro" width="20%">
-                </a>
-
-                <!-- StoreGE -->
-                <a href="https://github.com/ibryans/StoreGE-mobile" target="_blank" class="column has-text-centered">
-                    <p class="title is-4">StoreGE</p>
-                    <p class="subtitle is-6">Sistema para gerenciamento de lojas</p>
-                    <img src="./includes/imgs/logo_storege.png" alt="Logo StoreGE" width="20%">
-                </a>
-
-                <!-- Sistema de Reservas do Coltec -->
-                <a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php" target="_blank" class="column has-text-centered">
-                    <p class="title is-4">Reservas Coltec</p>
-                    <p class="subtitle is-6">Sistema para gerenciamento de reservas do colégio</p>
-                    <img src="./includes/imgs/logo_reservas.png" alt="Logo Reservas" width="20%">
-                </a>
+                <section class="columns mt-3 p-5">
+                    <div class="column is-6 is-horizontal-centered ph-2">
+                        <b>Maio/2019 - Maio/2020</b>
+                        <h3 class="subtitle">CCATES / UFMG - Centro colaborador do SUS</h3>
+                        <p>Entrei como pesquisador nesse projeto da faculdade de farmácia da UFMG, atuando como desenvolvedor frontend onde implementei sites e aplicativos usando <b>Angular/Ionic</b>, além de usar métodos de metodologia ágeis, fazendo design sprints e utilizando Trello e Jira para o controle das tarefas. </p>
+                    </div>
+                </section>
 
             </div>
-
-        </div>
-
-    </div>
-    
+        </section>
 
     <!-- Área de scripts -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>

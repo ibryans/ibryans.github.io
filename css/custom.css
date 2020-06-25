@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar-menu a.navbar-item:hover {
     color: rgb(255, 255, 255) !important;
     background-color: rgba(95, 95, 95, 0.575) !important;
@@ -22,6 +26,22 @@ nav {
     border-radius: 50%;
 }
 
+.p-5 {
+    padding: 5%;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.ph-2 {
+    padding: 0 2%;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .customized-hr {
     border: 0; 
     height: 0; 
@@ -39,6 +59,18 @@ nav {
     max-width: 1080px;
 }
 
-.mt-3 {
-    margin-top: 3rem;
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.is-horizontal-centered {
+    justify-content: center;
+}
+
+.is-right-centered {
+    justify-content: end;
+}
+
+.is-vertical-centered {
+    align-items: center;
 }
