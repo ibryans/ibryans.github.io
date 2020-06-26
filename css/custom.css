@@ -39,17 +39,6 @@ nav {
     padding: 0 2%;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.customized-hr {
-    border: 0; 
-    height: 0; 
-    border-top: 1px solid rgba(0, 0, 0, 0.1); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 35px 0px;
-}
 
 .secao {
     margin: 5% 0px;

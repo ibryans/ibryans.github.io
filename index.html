@@ -17,16 +17,16 @@
     <title>Bryan Oliveira</title>
 </head>
 
-<body>
+<body class="">
 
     <!-- Header -->
     <header>
 
-        <nav class="navbar is-fixed-top">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
 
             <!-- Menu burguer pra exibir a navbar no celular -->
             <div class="navbar-brand">
-                <a role="button" class="navbar-burger">
+                <a role="button" class="navbar-burger burguer">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -34,7 +34,7 @@
             </div>
                     
             <!-- A navbar em si -->
-            <div class="navbar-menu" id="mainNavbar">
+            <div class="navbar-menu">
 
                 <div class="navbar-start">
                     <a class="navbar-item has-text-white" href="index.html">
@@ -127,7 +127,7 @@
 
                 <section class="hero is-dark">
                     <div class="hero-body">
-                        <div class="container text-center">
+                        <div class="container has-text-centered">
                             <h1 class="title">
                                 Projetos
                             </h1>
@@ -203,7 +203,7 @@
 
                 <section class="hero is-dark">
                     <div class="hero-body">
-                        <div class="container text-center">
+                        <div class="container has-text-centered">
                             <h1 class="title">
                                 Experiências Profissionais
                             </h1>
@@ -228,6 +228,19 @@
 
     <!-- Área de scripts -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script>
+        $(document).ready(function() {
+    
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+    
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+                $(".navbar-item").toggleClass("has-text-white");
+            });
+        });
+    </script>
 </body>
 
 </html>
