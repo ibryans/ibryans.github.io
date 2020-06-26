@@ -23,13 +23,18 @@
     <header>
 
         <nav class="navbar is-fixed-top">
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <!-- Menu burguer pra exibir a navbar no celular -->
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
                     
-            <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <!-- A navbar em si -->
+            <div class="navbar-menu" id="mainNavbar">
 
                 <div class="navbar-start">
                     <a class="navbar-item has-text-white" href="index.html">
@@ -54,17 +59,17 @@
                 </div>
 
                 <div class="navbar-end">
-                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://github.com/ibryans" target="_blank">
+                    <a class="navbar-item has-text-white" href="https://github.com/ibryans" target="_blank">
                         <span class="icon">
                             <i class="fab fa-lg fa-github"></i>
                         </span>
                     </a>
-                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://www.linkedin.com/in/bryan-santos-090359150/" target="_blank">
+                    <a class="navbar-item has-text-white" href="https://www.linkedin.com/in/bryan-santos-090359150/" target="_blank">
                         <span class="icon">
                             <i class="fab fa-lg fa-linkedin"></i>
                         </span>
                     </a>
-                    <a class="navbar-item has-text-white is-hidden-touch is-hidden-desktop-only" href="https://www.facebook.com/bryan.santos.5454" target="_blank">
+                    <a class="navbar-item has-text-white" href="https://www.facebook.com/bryan.santos.5454" target="_blank">
                         <span class="icon">
                             <i class="fab fa-lg fa-facebook"></i>
                         </span>
@@ -78,7 +83,7 @@
             <div class="hero-body">
                 <div class="container ">
                     <h1 class="title has-text-white is-size-1">
-                        <span class="has-text-white">Bryan Oliveira</span>
+                        <span class="">Bryan Oliveira</span>
                     </h1>
                     <h2 class="subtitle has-text-white">
                         Desenvolvedor e estudante de tecnologia
@@ -120,7 +125,7 @@
         <section id="projetos" class="is-fullwidth">
             <div class="bd-example">
 
-                <section class="hero is-info">
+                <section class="hero is-dark">
                     <div class="hero-body">
                         <div class="container text-center">
                             <h1 class="title">
@@ -135,48 +140,54 @@
 
                 <!-- Petfood -->
                 <section class="columns mt-3 p-5 pb-0">
-                    <div class="column is-flex is-6 is-right-centered ph-2">
-                        <a href="https://github.com/ibryans/petFood" target="_blank" class="column has-text-right">
-                            <p class="title is-4">Petfood</p>
-                            <p class="subtitle is-6">Alimentação de pets</p>
-                            <img src="./includes/imgs/logo_petfood.png" alt="Logo Petfood" width="20%">
-                        </a>
-                    </div>
-                    <div class="column is-6 is-left-centered ph-2">
-                        <p>O <b>Petfood</b> foi um projeto desenvolvido como um trabalho no COLTEC - UFMG, que consistia em criar um aplicativo que controlasse um mecanismo para alimentação de cachorros, gatos, pets em geral. Fui responsável pela parte frontend do aplicativo, feito com java no Android Studio, e usando a integração como banco de dados pelo Firebase.</p>
-                        <p><a href="https://github.com/ibryans/petFood">Repositório no github</a> </p>
+                    <div class="column is-8 is-offset-1 columns">
+                        <div class="column is-flex is-6 ph-2">
+                            <a href="https://github.com/ibryans/petFood" target="_blank" class="column has-text-right-desktop has-text-centered">
+                                <p class="title is-4">Petfood</p>
+                                <p class="subtitle is-6">Alimentação de pets</p>
+                                <img src="./includes/imgs/logo_petfood.png" alt="Logo Petfood" width="20%">
+                            </a>
+                        </div>
+                        <div class="column is-6 is-left-centered ph-2">
+                            <p>O <b>Petfood</b> foi um projeto desenvolvido como um trabalho no COLTEC - UFMG, que consistia em criar um aplicativo que controlasse um mecanismo para alimentação de cachorros, gatos, pets em geral. Fui responsável pela parte frontend do aplicativo, feito com java no Android Studio, e usando a integração como banco de dados pelo Firebase.</p>
+                            <p><a href="https://github.com/ibryans/petFood">Repositório no github</a> </p>
+                        </div>
                     </div>
                 </section>
 
 
                 <!-- Enduro -->
-                <section class="columns mt-5">    
-                    <div class="column is-flex is-6 is-left-centered ph-2">
-                        <a href="http://enduro-coltec.herokuapp.com" target="_blank" class="column has-text-right">
-                            <p class="title is-4">Enduro - Coltec</p>
-                            <p class="subtitle is-6">Site para o Enduro a pé - Coltec</p>
-                            <img src="./includes/imgs/logo_enduro.png" alt="Logo Enduro" width="20%">
-                        </a>
-                    </div>
-                    <div class="column is-6 has-text-left ph-2">
-                        <p>O <b>Enduro - Coltec</b> foi um projeto desenvolvido durante meu estágio no COLTEC - UFMG, onde fui responsável pela criação do site oficial do evento Enduro, que é uma atividade esportiva de competição que consiste em cumprir trechos de caminhada (trekking), mantendo a regularidade (distância/tempo) estabelecida na planilha de orientação. Desenvolvi a aplicação usando Node + express + MongoDB</p>
-                        <p><a href="http://enduro-coltec.herokuapp.com/">Ir para o site</a> </p>
+                <section class="columns p-5 pb-0">    
+                    <div class="column is-8 is-offset-1 columns">
+                        <div class="column is-flex is-6 is-left-centered ph-2">
+                            <a href="http://enduro-coltec.herokuapp.com" target="_blank"class="column has-text-right-desktop has-text-centered">
+                                <p class="title is-4">Enduro - Coltec</p>
+                                <p class="subtitle is-6">Site para o Enduro a pé - Coltec</p>
+                                <img src="./includes/imgs/logo_enduro.png" alt="Logo Enduro" width="20%">
+                            </a>
+                        </div>
+                        <div class="column is-6 has-text-left ph-2">
+                            <p>O <b>Enduro - Coltec</b> foi um projeto desenvolvido durante meu estágio no COLTEC - UFMG, onde fui responsável pela criação do site oficial do evento Enduro, que é uma atividade esportiva de competição que consiste em cumprir trechos de caminhada (trekking), mantendo a regularidade (distância/tempo) estabelecida na planilha de orientação. Desenvolvi a aplicação usando Node + express + MongoDB</p>
+                            <p><a href="http://enduro-coltec.herokuapp.com/">Ir para o site</a> </p>
+                        </div>
                     </div>
                 </section>
 
 
                 <!-- Sistema de Reservas do Coltec -->
-                <section class="columns mt-5">    
-                    <div class="column is-flex is-6 ph-2">
-                        <a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php" target="_blank" class="column has-text-right">
-                            <p class="title is-4">Reservas Coltec</p>
-                            <p class="subtitle is-6">Sistema para gerenciamento de reservas do colégio</p>
-                            <img src="./includes/imgs/logo_reservas.png" alt="Logo Reservas" width="20%">
-                        </a>
-                    </div>
-                    <div class="column is-6 has-text-left ph-2">
-                        <p>O <b>Sistema de Reservas</b> é um sistema agora utilizado por todo o coltec, que permite com que alunos e professores possam reservar algum espaço do colégio, seja uma quadra, auditório, salas, laboratórios, etc. Fazendo com que eliminamos o uso de papel e facilite a vida de todos que precisam. Foi desenvolvido para um trabalho de Desenvolvimento de Aplicações Web (DAW) pelo meu grupo.</p>
-                        <p><a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php">Ir para o site</a> </p>
+                <section class="columns p-5 pb-0"> 
+                    <div class="column is-8 is-offset-1 columns">   
+                        <div class="column is-flex is-6 ph-2">
+                            <a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php" target="_blank" class="column has-text-right-desktop has-text-centered">
+                                <p class="title is-4">Reservas Coltec</p>
+                                <p class="subtitle is-6">Sistema para gerenciamento de reservas do colégio</p>
+                                <img src="./includes/imgs/logo_reservas.png" alt="Logo Reservas" width="20%">
+                            </a>
+                        </div>
+                        <div class="column is-6 has-text-left ph-2">
+                            <p>O <b>Sistema de Reservas</b> é um sistema agora utilizado por todo o coltec, que permite com que alunos e professores possam reservar algum espaço do colégio, seja uma quadra, auditório, salas, laboratórios, etc. Fazendo com que eliminamos o uso de papel e facilite a vida de todos que precisam. Foi desenvolvido para um trabalho de Desenvolvimento de Aplicações Web (DAW) pelo meu grupo.</p>
+                            <p><a href="http://app.coltec.ufmg.br/projetos/reservas_2/index.php">Ir para o site</a> </p>
+                        </div>
                     </div>
                 </section>
 
@@ -190,7 +201,7 @@
         <section id="xp" class="is-fullwidth mt-5">
             <div class="bd-example">
 
-                <section class="hero is-info">
+                <section class="hero is-dark">
                     <div class="hero-body">
                         <div class="container text-center">
                             <h1 class="title">
@@ -204,8 +215,8 @@
                 </section>
 
                 <!-- Petfood -->
-                <section class="columns mt-3 p-5">
-                    <div class="column is-6 is-horizontal-centered ph-2">
+                <section class="columns mt-2 p-5">
+                    <div class="column is-6 is-offset-3 ph-2">
                         <b>Maio/2019 - Maio/2020</b>
                         <h3 class="subtitle">CCATES / UFMG - Centro colaborador do SUS</h3>
                         <p>Entrei como pesquisador nesse projeto da faculdade de farmácia da UFMG, atuando como desenvolvedor frontend onde implementei sites e aplicativos usando <b>Angular/Ionic</b>, além de usar métodos de metodologia ágeis, fazendo design sprints e utilizando Trello e Jira para o controle das tarefas. </p>
@@ -217,8 +228,6 @@
 
     <!-- Área de scripts -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
-    <script type='text/javascript' src="./includes/scripts/link-ancora.js"></script>
-
 </body>
 
 </html>

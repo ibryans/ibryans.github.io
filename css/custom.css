@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .navbar-menu a.navbar-item:hover {
     color: rgb(255, 255, 255) !important;
     background-color: rgba(95, 95, 95, 0.575) !important;
@@ -57,6 +58,10 @@ nav {
 .bd-focus {
     margin: 4rem auto 4rem;
     max-width: 1080px;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }
 
 .mt-5 {
