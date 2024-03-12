@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <link rel="shortcut icon" href={Icon.src} type="image/x-icon" />
-      <body className={inter.className}>{children}</body>
+      <body className='bg-slate-900'>{children}</body>
     </html>
   );
 }

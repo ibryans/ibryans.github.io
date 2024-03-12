@@ -15,7 +15,7 @@ type buttonProps = {
 export default function SocialButton({ icon, url }: buttonProps) {
     return (
         <a href={url} target='blank'>
-            <button className="outline outline-1 bg-transparent rounded-lg p-3 mx-1 hover:bg-blue-300 hover:text-black">
+            <button className="outline outline-1 bg-transparent rounded-lg p-3 mx-1 hover:bg-emerald-700 transition duration-300">
                 { icon }
             </button>
         </a>
