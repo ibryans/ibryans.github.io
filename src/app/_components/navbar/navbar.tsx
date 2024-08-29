@@ -41,10 +41,10 @@ export default function Navbar() {
 
             {/* Menu */}
             <nav className='flex space-x-10 justify-end sm:block hidden'>
-                <NavbarItem text="Sobre" href="#sobre"/>
-                <NavbarItem text="Experiência" href="#xp"/>
-                <NavbarItem text="Projetos" href="#projetos"/>
-                <NavbarItem text="Contato" href="#contato"/>
+                <NavbarItem text="About" href="#about"/>
+                {/* <NavbarItem text="Experiences" href="#experiences"/>
+                <NavbarItem text="Projects" href="#projects"/>
+                <NavbarItem text="Contact" href="#contact"/> */}
             </nav>
 
             {/* Menu hamburguer */}

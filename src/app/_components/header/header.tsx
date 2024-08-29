@@ -37,7 +37,7 @@ export function Header() {
                 </div>
 
                 <h2 className="text-2xl sm:text-2xl text-emerald-500">
-                    Software Developer
+                    Software Engineer
                 </h2>
 
                 <div className="mt-10 pb-10 border-b border-emerald-500">
