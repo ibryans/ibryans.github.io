@@ -4,7 +4,6 @@
  * (Plano de fundo, nome, descrição) 
 */
 
-import background from  '/public/background.jpg'
 import { FaLinkedinIn } from "react-icons/fa";
 import avatar from '/public/me.png'
 import './header.css'
@@ -12,7 +11,6 @@ import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
 import Image from 'next/image';
 import Navbar from '../navbar/navbar';
-import { BsArrowDownCircle } from 'react-icons/bs';
 
 export function Header() {
 
@@ -36,11 +34,11 @@ export function Header() {
                     </h1>
                 </div>
 
-                <h2 className="text-2xl sm:text-2xl text-emerald-500">
+                <h2 className="text-2xl sm:text-2xl text-blue-600">
                     Software Engineer
                 </h2>
 
-                <div className="mt-10 pb-10 border-b border-emerald-500">
+                <div className="mt-10 pb-10 border-b-2 border-blue-600">
                     <SocialButton 
                         icon={<FaLinkedinIn/>} 
                         url="https://www.linkedin.com/in/ibryans/"/>

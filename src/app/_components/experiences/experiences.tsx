@@ -8,7 +8,7 @@ export function Experiences() {
         <div className="flex justify-center">    
             <section className="w-1/2 text-white" id="experiences">
                 <h3 className="text-2xl font-bold">
-                    <span className="border-l border-emerald-500 px-3">
+                    <span className="border-l border-blue-600 px-3">
                         Experiences
                     </span>
                 </h3>

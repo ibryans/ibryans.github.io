@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <link rel="shortcut icon" href={Icon.src} type="image/x-icon" />
-      <body className='bg-slate-900'>{children}</body>
+      <body className='bg-white-900 dark:bg-black transition duration-500'>{children}</body>
     </html>
   );
 }
