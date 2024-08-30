@@ -5,11 +5,11 @@
 
 export function About() {
     return (
-        <div className="flex justify-center appear" id="about">    
-            <section className="w-full md:w-1/2 h-[70vh]">
-                <h3 className="text-2xl font-bold">
+        <div className="flex justify-center items-center appear h-screen" id="about">    
+            <section className="w-full md:w-1/2">
+                <h3 className="text-3xl font-bold">
                     <span className="border-l-2 border-blue-600 px-3">
-                        Hey, what&apos;s up?
+                        About me
                     </span>
                 </h3>
                 <div className="flex flex-col md:flex-row gap-x-48 py-10">
