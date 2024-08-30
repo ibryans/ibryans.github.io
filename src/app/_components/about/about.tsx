@@ -5,8 +5,8 @@
 
 export function About() {
     return (
-        <div className="flex justify-center">    
-            <section className="w-1/2" id="about">
+        <div className="flex justify-center appear" id="about">    
+            <section className="w-full md:w-1/2 h-[70vh]">
                 <h3 className="text-2xl font-bold">
                     <span className="border-l-2 border-blue-600 px-3">
                         Hey, what&apos;s up?

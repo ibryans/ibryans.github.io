@@ -1,5 +1,5 @@
 /* Header Animation */
-.typewriter h1 {
+.typewriter h2 {
     padding: 5px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .02em solid rgb(182, 182, 182); /* The typwriter cursor */

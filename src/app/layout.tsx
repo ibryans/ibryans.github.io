@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="dark scroll-smooth">
       <link rel="shortcut icon" href={Icon.src} type="image/x-icon" />
       <body className='bg-white-900 dark:bg-black transition duration-500'>{children}</body>
     </html>

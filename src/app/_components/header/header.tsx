@@ -10,33 +10,31 @@ import './header.css'
 import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
 import Image from 'next/image';
-import Navbar from '../navbar/navbar';
 
 export function Header() {
 
     return (
-        <div className='p-5'>
-            <Navbar/>
-
-            <div
-                className="flex flex-col justify-center items-center -mt-16 h-[100vh] justify-center">
+        <div id="home" className='p-5 appear'>
+            <div 
+                className="flex flex-col justify-center items-center  h-[100vh] -mt-5 justify-center">
 
                 <Image
-                    width={799}
-                    height={799}
+                    width={800}
+                    height={800}
                     alt='Plano de fundo'
-                    className='border-[3px] border-white rounded-full w-1/2 sm:w-1/5 lg:w-1/6 2xl:w-1/12 mb-10'
+                    className='border-[3px] border-white rounded-full w-1/2 sm:w-1/5 lg:w-1/5 2xl:w-1/10 mb-10'
                     src={avatar.src} />
 
-                <div className="typewriter">
-                    <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3">
-                        Bryan S. Oliveira
-                    </h1>
-                </div>
+                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold mb-3">
+                    Bryan S. Oliveira
+                </h1>
 
-                <h2 className="text-2xl sm:text-2xl text-blue-600">
-                    Software Engineer
-                </h2>
+                <div className="typewriter">
+                    <h2 className="text-2xl md:text-3xl text-blue-600">
+                        Software Engineer
+                    </h2> 
+                </div>
+                
 
                 <div className="mt-10 pb-10 border-b-2 border-blue-600">
                     <SocialButton 
