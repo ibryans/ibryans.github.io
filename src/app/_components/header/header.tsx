@@ -4,7 +4,7 @@
  * (Plano de fundo, nome, descrição) 
 */
 
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import avatar from '/public/me.png'
 import './header.css'
 import { IoMdMail } from 'react-icons/io';
@@ -43,6 +43,9 @@ export function Header() {
                     <SocialButton 
                         icon={<IoMdMail/>} 
                         url="mailto:bsoliveira@proton.me"/>
+                    <SocialButton
+                        icon={<FaGithub/>}
+                        url="https://www.github.com/ibryans"/>
                 </div>
             </div>
         </div>
