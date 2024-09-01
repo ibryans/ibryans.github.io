@@ -9,7 +9,9 @@ import avatar from '/public/me.png'
 import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
 import Image from 'next/image';
+import './header.css';
 import { ReactTyped } from "react-typed";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Header() {
 
@@ -39,16 +41,27 @@ export function Header() {
                         />
                     </h2>
 
-                    <div className="flex flex-row justify-start items-center space-x-2 mt-10">
-                        <div className="hidden sm:flex px-5 py-3 bg-blue-600 rounded-full text-white space-x-5 items-center">
-                            <span>Contact me</span> <FaChevronCircleRight/>
+                    <div className="flex flex-row justify-start items-center space-x-2 mt-20">
+                        
+                        {/* Email Tooltip */}
+                        <div className="tooltip-container relative">
+                            <span className="tooltip bg-slate-600 text-white">
+                                bsoliveira@proton.me
+                            </span>
+
+                            <button className="px-5 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-full text-white flex space-x-5 items-center">
+                                <span>Contact me</span> 
+                                <IoMdMail/>
+                            </button> 
                         </div>
+                        
+
                         <SocialButton 
                             icon={<FaLinkedinIn/>} 
                             url="https://www.linkedin.com/in/ibryans/"/>
                         <SocialButton 
-                            icon={<IoMdMail/>} 
-                            url="mailto:bsoliveira@proton.me"/>
+                            icon={<FaXTwitter/>} 
+                            url="https://bsky.app/profile/bsoliveira.com"/>
                         <SocialButton
                             icon={<FaGithub/>}
                             url="https://www.github.com/ibryans"/>
