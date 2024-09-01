@@ -13,9 +13,9 @@ export default function Home() {
     <main className="dark:text-white text-black container mx-auto">
       <Navbar/>
       <Header/>
-      <About/>
-      <Skills/>
-      <Experiences/>
+      {/* <About/> */}
+      {/* <Skills/> */}
+      {/* <Experiences/> */}
     </main>
   );
 }

@@ -77,10 +77,11 @@ export function Header() {
                 
             </div>
 
-            <a href="#about" className="absolute bottom-0 left-[50%] w-100 mb-10 cursor-pointer">
-               <FaChevronCircleDown 
+            <a className="absolute bottom-0 left-[50%] w-100 mb-10 cursor-pointer">
+               Under construction...
+               {/* <FaChevronCircleDown 
                     className="animate-bounce w-6 h-6 transition" 
-                /> 
+                />  */}
             </a>
             
         </div>
