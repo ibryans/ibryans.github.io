@@ -4,7 +4,7 @@
  * (Plano de fundo, nome, descrição) 
 */
 
-import { FaChevronCircleRight, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaChevronCircleDown, FaChevronCircleRight, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import avatar from '/public/me.png'
 import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
@@ -25,7 +25,7 @@ export function Header() {
                         width={800}
                         height={800}
                         alt='Plano de fundo'
-                        className='sm:hidden border-[3px] border-white rounded-full w-1/2 sm:w-1/5 lg:w-1/5 2xl:w-1/10 mb-10'
+                        className='sm:hidden rounded-full w-1/2 sm:w-1/5 lg:w-1/5 2xl:w-1/10 mb-10'
                         src={avatar.src} />
                     
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-3">
@@ -72,10 +72,17 @@ export function Header() {
                     width={800}
                     height={800}
                     alt='Plano de fundo'
-                    className='hidden sm:block border-[3px] border-white rounded-full w-1/2 sm:w-1/3 lg:w-1/5 2xl:w-1/10 mb-10'
+                    className='hidden sm:block rounded-full w-1/2 sm:w-1/3 lg:w-1/5 2xl:w-1/10 mb-10'
                     src={avatar.src} />
                 
             </div>
+
+            <a href="#about" className="absolute bottom-0 left-[50%] w-100 mb-10 cursor-pointer">
+               <FaChevronCircleDown 
+                    className="animate-bounce w-6 h-6 transition" 
+                /> 
+            </a>
+            
         </div>
     );
 }
