@@ -6,7 +6,7 @@
 
 export function NavbarItem({ text, href }: any) {
     return (
-        <a href={ href } className='hover:text-blue-600 transition duration-300 text-md'>
+        <a href={ href } className='hover:text-blue-600 transition duration-300 text-sm sm:text-lg'>
             { text }
         </a>
     )
