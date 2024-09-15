@@ -13,7 +13,7 @@ export default function Home() {
     <main className="dark:text-white text-black container mx-auto">
       <Navbar/>
       <Header/>
-      {/* <About/> */}
+      <About/>
       {/* <Skills/> */}
       {/* <Experiences/> */}
     </main>
