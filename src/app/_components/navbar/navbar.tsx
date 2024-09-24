@@ -30,8 +30,8 @@ export default function Navbar() {
                 <nav className='flex space-x-4 sm:space-x-10 justify-start'>
                     <NavbarItem text="Home" href="#home"/>
                     <NavbarItem text="About" href="#about"/>
-                    <NavbarItem text="Skills" href="#skills"/>
-                    <NavbarItem text="Experiences" href="#experiences"/>
+                    {/* <NavbarItem text="Skills" href="#skills"/> */}
+                    {/* <NavbarItem text="Experiences" href="#experiences"/> */}
                 </nav>
 
                 {/* Dark mode */}
