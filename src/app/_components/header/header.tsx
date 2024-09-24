@@ -11,7 +11,7 @@ import SocialButton from '../social-button/social-button';
 import Image from 'next/image';
 import './header.css';
 import { ReactTyped } from "react-typed";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaBluesky } from "react-icons/fa6";
 
 export function Header() {
 
@@ -34,7 +34,7 @@ export function Header() {
 
                     <h2 className="text-xl lg:text-2xl">
                         <ReactTyped
-                            strings={['Frontend Software Engineer', 'UX/UI Enthusiast', 'Fullstack Developer']}
+                            strings={['Frontend Software Engineer', 'UX/UI designer', 'Computer Scientist']}
                             typeSpeed={50}
                             backSpeed={20}
                             loop
@@ -49,10 +49,10 @@ export function Header() {
                                 bsoliveira@proton.me
                             </span>
 
-                            <button className="px-5 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-full text-white flex space-x-5 items-center">
+                            <a href="mailto:bsoliveira@proton.me" className="px-5 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-full text-white flex space-x-5 items-center">
                                 <span>Contact me</span> 
                                 <IoMdMail/>
-                            </button> 
+                            </a> 
                         </div>
                         
 
@@ -60,7 +60,7 @@ export function Header() {
                             icon={<FaLinkedinIn/>} 
                             url="https://www.linkedin.com/in/ibryans/"/>
                         <SocialButton 
-                            icon={<FaXTwitter/>} 
+                            icon={<FaBluesky/>} 
                             url="https://bsky.app/profile/bsoliveira.com"/>
                         <SocialButton
                             icon={<FaGithub/>}
