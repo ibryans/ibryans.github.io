@@ -4,17 +4,13 @@
 */
 
 import Image from "next/image";
-import header from "/public/about.jpg";
-import { FaAngular, FaCss3, FaFigma, FaGit, FaHtml5, FaReact } from "react-icons/fa6";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaGitSquare } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
+import developer from '/public/developer.png';
 
 export function About() {
     return (
-        <div id="about" className="flex flex-col justify-center items-center appear h-screen">
-            <div className="flex flex-row justify-center items-center">
-                <section className="w-full md:w-1/2 px-10 md:px-0">
+        <div id="about" className="flex flex-col md:flex-row justify-center md:justify-between items-center appear h-screen px-10">
+            <div className="w-full md:w-1/2 flex flex-row justify-center items-center">
+                <section className="w-full">
                     <h3 className="text-sm font-extrabold text-blue-600 mb-2">
                         ABOUT ME
                     </h3>
@@ -31,16 +27,12 @@ export function About() {
                     </div>
                 </section>
             </div>
-
-            <div className="flex gap-3 p-5">
-                <FaReact className="w-16 h-16 transition"/>
-                <TbBrandNextjs className="w-16 h-16 transition"/>
-                <FaAngular className="w-16 h-16 transition"/>
-                <BiLogoTypescript className="w-16 h-16 transition"/>
-                <FaHtml5 className="w-16 h-16 transition"/>
-                <FaCss3 className="w-16 h-16 transition"/>
-                <FaFigma className="w-16 h-16 transition"/>
-                <FaGitSquare className="w-16 h-16 transition"/>
+            <div className="w-full md:w-1/3 hidden md:block">
+                <Image 
+                    src={developer} 
+                    alt="developer"
+                    className=" border-black dark:border-white "
+                />
             </div>
         </div>
     );
