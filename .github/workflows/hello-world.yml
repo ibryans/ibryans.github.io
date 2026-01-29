@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Exemplo de um workflow
+
+# Quando ele vai ser ativado? (Evento)
+on:
+  workflow_dispatch:
+
+jobs:
+  initial:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Printa Hello World
+        run: echo "Hello, World!"
