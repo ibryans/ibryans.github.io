@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "title": "Bryan S. Oliveira · Desenvolvedor Frontend",
+    "description": "Desenvolvedor frontend pleno de Belo Horizonte, trabalhando com Vue 3, Nuxt e TypeScript. Experiência, habilidades e contato.",
+    "ogLocale": "pt_BR"
+  },
+  "nav": {
+    "toggleTheme": "Alternar tema",
+    "skipToContent": "Pular para o conteúdo",
+    "home": "Início",
+    "about": "Sobre",
+    "experiences": "Experiência",
+    "skills": "Habilidades",
+    "switchLanguage": "Mudar para inglês"
+  },
+  "header": {
+    "avatarAlt": "Foto de Bryan S. Oliveira",
+    "roles": ["Desenvolvedor Frontend", "Vue.js & Nuxt", "Cientista da Computação"],
+    "copyEmail": "Copiar email",
+    "copied": "Email copiado!",
+    "scrollDown": "Ir para Sobre",
+    "contact": "Fale comigo"
+  },
+  "about": {
+    "label": "SOBRE MIM",
+    "title": "Desenvolvedor frontend de Belo Horizonte, Brasil 🇧🇷",
+    "bio": "Oi, meu nome é Bryan. Sou desenvolvedor frontend pleno e trabalho com web desde 2019. Hoje atuo principalmente com <b>Vue 3</b>, <b>Nuxt</b> e <b>TypeScript</b>, construindo interfaces performáticas, acessíveis e escaláveis com <b>Tailwind CSS</b>, <b>PrimeVue</b>, <b>Vuetify</b> e <b>SASS</b>.",
+    "backend": "Também trabalho perto do backend, integrando com serviços e APIs em <b>.NET Core (C#)</b> e bancos de dados <b>SQL Server</b> e <b>PostgreSQL</b>, o que me dá uma visão ponta a ponta da arquitetura da aplicação.",
+    "education": "🎓 Sou formado em Ciência da Computação e pós-graduado em Arquitetura de Sistemas Distribuídos, ambos pela PUC Minas, e técnico em TI pelo Colégio Técnico da UFMG (COLTEC). No caminho, também fiz pesquisa em Deep Learning com Python."
+  },
+  "experiences": {
+    "label": "EXPERIÊNCIA",
+    "title": "Onde trabalhei",
+    "present": "Atual",
+    "readArticle": "Ler o artigo",
+    "items": {
+      "bellosoft": {
+        "role": "Desenvolvedor Frontend Pleno",
+        "highlights": [
+          "Desenvolvimento de software para empresas internacionais, com foco em Inglaterra e Irlanda.",
+          "Responsável pelo frontend de projetos .NET Core, utilizando Vue.js, JavaScript, HTML, CSS e SASS.",
+          "Gerenciamento da equipe e dos projetos no Azure DevOps.",
+          "Colaboração em equipe através de pull requests, revisão de código, testes automatizados e QA."
+        ]
+      },
+      "petrobras": {
+        "role": "Pesquisador em Deep Learning",
+        "highlights": [
+          "Projeto de pesquisa científica da Petrobras em colaboração com a UFMG.",
+          "Implementação e treinamento de Redes Neurais Convolucionais para segmentação de imagens sísmicas.",
+          "Desenvolvimento de interfaces gráficas em Python para visualização 2D e 3D dos dados sísmicos.",
+          "Colaboração em um artigo científico de revisão publicado na Earth-Science Reviews."
+        ]
+      },
+      "pluritech": {
+        "role": "Estagiário Desenvolvedor Front-end",
+        "highlights": [
+          "Desenvolvimento frontend de softwares para empresas.",
+          "Angular, React, Ionic e React Native, com integrações a APIs externas e gateways de pagamento.",
+          "Algumas tarefas no backend com NestJS, TypeORM e PostgreSQL.",
+          "Metodologia ágil com Trello; versionamento com Git e GitLab."
+        ]
+      },
+      "ccates": {
+        "role": "Pesquisador e Desenvolvedor Front-end",
+        "highlights": [
+          "Desenvolvimento de softwares para um grupo de pesquisa da UFMG na área da saúde.",
+          "Angular em websites, Ionic em aplicativos e Figma para UX/UI.",
+          "Design Sprints, metodologia ágil com Trello e Jira e versionamento com GitLab."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "label": "HABILIDADES",
+    "title": "Tecnologias com que trabalho",
+    "groups": {
+      "frontend": "Frontend",
+      "state": "Estado e dados",
+      "quality": "Qualidade e testes",
+      "offline": "Acessibilidade e offline",
+      "backend": "Backend e bancos de dados",
+      "tools": "Ferramentas e CI/CD"
+    }
+  },
+  "footer": {
+    "rights": "© {year} Bryan S. Oliveira"
+  }
+}

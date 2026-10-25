@@ -1,25 +1,68 @@
 /**
  * @author Bryan S. Oliveira
- * Seção de experiencias
+ * Seção de experiências, em formato de linha do tempo
 */
 
+import { useFormatter, useTranslations } from "next-intl";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { experiences } from "@/app/_data/experiences";
+
 export function Experiences() {
+    const t = useTranslations('experiences');
+    const format = useFormatter();
+
+    const formatMonth = (date: string) =>
+        format.dateTime(new Date(`${date}-01T12:00:00`), { month: 'short', year: 'numeric' });
+
     return (
-        <div className="flex justify-center items-center appear h-screen" id="experiences">    
-            <section className="w-full md:w-1/2  px-10 md:px-0">
-                <h3 className="text-3xl font-bold">
-                    <span className="border-l-2 border-blue-600 px-3">
-                        Experiences
-                    </span>
-                </h3>
-                <div className="flex flex-col md:flex-row gap-x-48 py-10">
-                    <div className="flex-initial pb-5 space-y-5 text-xl">
-                        <p>
-                            Loading ...
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <section id="experiences" aria-labelledby="experiences-title" className="flex justify-center items-center appear min-h-svh px-10 py-24">
+            <div className="w-full md:w-2/3">
+                <p className="text-sm font-extrabold text-accent mb-2">
+                    {t('label')}
+                </p>
+                <h2 id="experiences-title" className="text-2xl font-bold">{t('title')}</h2>
+
+                <ol className="mt-10 border-l-2 border-blue-600/30 space-y-12">
+                    {experiences.map((experience) => (
+                        <li key={experience.id} className="relative pl-8">
+                            <span aria-hidden="true" className="absolute -left-[7px] top-2 w-3 h-3 rounded-full bg-blue-600"/>
+
+                            <p className="text-sm text-slate-500 dark:text-slate-400">
+                                {formatMonth(experience.start)} — {experience.end ? formatMonth(experience.end) : t('present')}
+                            </p>
+                            <h3 className="text-xl font-bold mt-1">
+                                {t(`items.${experience.id}.role`)}
+                            </h3>
+                            <p className="font-semibold text-accent">{experience.company}</p>
+
+                            <ul className="mt-3 space-y-1 list-disc list-outside ml-5 text-lg">
+                                {(t.raw(`items.${experience.id}.highlights`) as string[]).map((highlight) => (
+                                    <li key={highlight}>{highlight}</li>
+                                ))}
+                            </ul>
+
+                            {experience.link && (
+                                <a
+                                    href={experience.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 mt-3 text-accent hover:underline">
+                                    {t('readArticle')}
+                                    <FaExternalLinkAlt aria-hidden="true" className="w-3 h-3"/>
+                                </a>
+                            )}
+
+                            <ul className="flex flex-wrap gap-2 mt-4">
+                                {experience.tech.map((tech) => (
+                                    <li key={tech} className="text-sm px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800">
+                                        {tech}
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
+                    ))}
+                </ol>
+            </div>
+        </section>
     );
 }
