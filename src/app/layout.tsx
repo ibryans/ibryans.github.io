@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Icon from '/public/me.png'
+import Icon from '@/assets/avatar.webp'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <link rel="shortcut icon" href={Icon.src} type="image/x-icon" />
-      <body className='bg-white-900 dark:bg-black transition duration-500'>{children}</body>
+      <link rel="icon" href={Icon.src} type="image/webp" />
+      <body className={`${inter.className} bg-white-900 dark:bg-black transition duration-500`}>{children}</body>
     </html>
   );
 }

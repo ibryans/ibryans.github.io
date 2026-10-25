@@ -4,7 +4,12 @@
  * @returns Um item do menu de navegação
  */
 
-export function NavbarItem({ text, href }: any) {
+type NavbarItemProps = {
+    text: string;
+    href: string;
+}
+
+export function NavbarItem({ text, href }: NavbarItemProps) {
     return (
         <a href={ href } className='hover:text-blue-600 transition duration-300 text-sm sm:text-lg'>
             { text }

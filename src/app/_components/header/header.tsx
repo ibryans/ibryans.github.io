@@ -1,11 +1,13 @@
+'use client'
+
 /**
  * @author Bryan S. Oliveira
  * Componente do cabeçalho do site 
  * (Plano de fundo, nome, descrição) 
 */
 
-import { FaChevronCircleDown, FaChevronCircleRight, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import avatar from '/public/me.png'
+import { FaChevronCircleDown, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import avatar from '@/assets/avatar.webp'
 import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
 import Image from 'next/image';
@@ -18,15 +20,13 @@ export function Header() {
     return (
         <div id="home" className='p-5 appear'>
             <div 
-                className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-20 md:space-x-40 h-screen -mt-5">
+                className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-20 md:space-x-40 min-h-svh -mt-5">
 
                 <div className="flex flex-col items-center sm:items-start">
                     <Image
-                        width={800}
-                        height={800}
                         alt='Plano de fundo'
                         className='sm:hidden rounded-full w-1/2 sm:w-1/5 lg:w-1/5 2xl:w-1/10 mb-10'
-                        src={avatar.src} />
+                        src={avatar} />
                     
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-3">
                         Bryan S. Oliveira
@@ -69,11 +69,9 @@ export function Header() {
                 </div>
                 
                 <Image
-                    width={800}
-                    height={800}
                     alt='Plano de fundo'
                     className='hidden sm:block rounded-full w-1/2 sm:w-1/3 lg:w-1/5 2xl:w-1/10 mb-10'
-                    src={avatar.src} />
+                    src={avatar} />
                 
             </div>
 

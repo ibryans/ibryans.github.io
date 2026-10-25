@@ -5,7 +5,6 @@
 */
 
 import { ReactElement } from "react";
-import './social-button.css';
 
 type buttonProps = {
     icon: ReactElement;

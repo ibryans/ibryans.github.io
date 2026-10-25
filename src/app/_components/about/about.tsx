@@ -4,11 +4,11 @@
 */
 
 import Image from "next/image";
-import developer from '/public/developer.png';
+import developer from '@/assets/developer.webp';
 
 export function About() {
     return (
-        <div id="about" className="flex flex-col md:flex-row justify-center md:justify-between items-center appear h-screen px-10">
+        <div id="about" className="flex flex-col md:flex-row justify-center md:justify-between items-center appear min-h-svh px-10">
             <div className="w-full md:w-1/2 flex flex-row justify-center items-center">
                 <section className="w-full">
                     <h3 className="text-sm font-extrabold text-blue-600 mb-2">

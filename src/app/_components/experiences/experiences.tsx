@@ -5,7 +5,7 @@
 
 export function Experiences() {
     return (
-        <div className="flex justify-center items-center appear h-screen" id="experiences">    
+        <div className="flex justify-center items-center appear min-h-svh" id="experiences">    
             <section className="w-full md:w-1/2  px-10 md:px-0">
                 <h3 className="text-3xl font-bold">
                     <span className="border-l-2 border-blue-600 px-3">
