@@ -15,17 +15,17 @@ export function Experiences() {
         format.dateTime(new Date(`${date}-01T12:00:00`), { month: 'short', year: 'numeric' });
 
     return (
-        <div id="experiences" className="flex justify-center items-center appear min-h-svh px-10 py-24">
-            <section className="w-full md:w-2/3">
-                <h3 className="text-sm font-extrabold text-blue-600 mb-2">
+        <section id="experiences" aria-labelledby="experiences-title" className="flex justify-center items-center appear min-h-svh px-10 py-24">
+            <div className="w-full md:w-2/3">
+                <p className="text-sm font-extrabold text-accent mb-2">
                     {t('label')}
-                </h3>
-                <h2 className="text-2xl font-bold">{t('title')}</h2>
+                </p>
+                <h2 id="experiences-title" className="text-2xl font-bold">{t('title')}</h2>
 
                 <ol className="mt-10 border-l-2 border-blue-600/30 space-y-12">
                     {experiences.map((experience) => (
                         <li key={experience.id} className="relative pl-8">
-                            <span className="absolute -left-[7px] top-2 w-3 h-3 rounded-full bg-blue-600"/>
+                            <span aria-hidden="true" className="absolute -left-[7px] top-2 w-3 h-3 rounded-full bg-blue-600"/>
 
                             <p className="text-sm text-slate-500 dark:text-slate-400">
                                 {formatMonth(experience.start)} — {experience.end ? formatMonth(experience.end) : t('present')}
@@ -33,7 +33,7 @@ export function Experiences() {
                             <h3 className="text-xl font-bold mt-1">
                                 {t(`items.${experience.id}.role`)}
                             </h3>
-                            <p className="font-semibold text-blue-600">{experience.company}</p>
+                            <p className="font-semibold text-accent">{experience.company}</p>
 
                             <ul className="mt-3 space-y-1 list-disc list-outside ml-5 text-lg">
                                 {(t.raw(`items.${experience.id}.highlights`) as string[]).map((highlight) => (
@@ -46,9 +46,9 @@ export function Experiences() {
                                     href={experience.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 mt-3 text-blue-600 hover:underline">
+                                    className="inline-flex items-center gap-2 mt-3 text-accent hover:underline">
                                     {t('readArticle')}
-                                    <FaExternalLinkAlt className="w-3 h-3"/>
+                                    <FaExternalLinkAlt aria-hidden="true" className="w-3 h-3"/>
                                 </a>
                             )}
 
@@ -62,7 +62,7 @@ export function Experiences() {
                         </li>
                     ))}
                 </ol>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }

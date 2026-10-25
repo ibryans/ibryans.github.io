@@ -47,12 +47,12 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
+    <html lang={locale} className="motion-safe:scroll-smooth" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="icon" href={Icon.src} type="image/webp" />
       </head>
-      <body className={`${inter.className} bg-white dark:bg-black transition duration-500`}>
+      <body className={`${inter.className} bg-white dark:bg-black text-black dark:text-white transition duration-500`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

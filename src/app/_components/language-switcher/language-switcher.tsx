@@ -32,11 +32,11 @@ export default function LanguageSwitcher() {
             href={`/${target}`}
             hrefLang={target}
             onClick={switchLanguage}
-            aria-label={t('switchLanguage')}
             title={t('switchLanguage')}
-            className="flex space-x-1.5 sm:space-x-2 items-center group p-1 sm:p-2 rounded-full transition text-[13px] sm:text-base hover:text-blue-600">
-            <FaGlobe className="group-hover:animate-spin"/>
+            className="flex space-x-1.5 sm:space-x-2 items-center group p-1 sm:p-2 rounded-full transition text-[13px] sm:text-base hover:text-accent">
+            <FaGlobe aria-hidden="true" className="motion-safe:group-hover:animate-spin"/>
             <b>{locale.toUpperCase()}</b>
+            <span className="sr-only">{t('switchLanguage')}</span>
         </a>
     );
 }

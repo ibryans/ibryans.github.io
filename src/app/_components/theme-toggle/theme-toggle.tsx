@@ -8,6 +8,7 @@
 
 import { useEffect } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 const STORAGE_KEY = 'theme';
 
@@ -20,6 +21,7 @@ function getSavedTheme() {
 }
 
 export default function ThemeToggle() {
+    const t = useTranslations('nav');
 
     // Sem escolha salva, acompanha as mudanças do tema do sistema
     useEffect(() => {
@@ -43,10 +45,11 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            aria-label="Toggle theme"
-            className="p-1 sm:p-2 rounded-full hover:text-blue-600 transition">
-            <FiMoon className="dark:hidden w-5 h-5 hover:animate-spin-finite"/>
-            <FiSun className="hidden dark:block w-5 h-5 hover:animate-spin-finite"/>
+            aria-label={t('toggleTheme')}
+            title={t('toggleTheme')}
+            className="p-1 sm:p-2 rounded-full hover:text-accent transition">
+            <FiMoon aria-hidden="true" className="dark:hidden w-5 h-5 motion-safe:hover:animate-spin-finite"/>
+            <FiSun aria-hidden="true" className="hidden dark:block w-5 h-5 motion-safe:hover:animate-spin-finite"/>
         </button>
     );
 }

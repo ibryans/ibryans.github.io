@@ -1,5 +1,7 @@
 {
   "nav": {
+    "toggleTheme": "Alternar tema",
+    "skipToContent": "Pular para o conteúdo",
     "home": "Início",
     "about": "Sobre",
     "experiences": "Experiência",
@@ -7,6 +9,7 @@
     "switchLanguage": "Mudar para inglês"
   },
   "header": {
+    "avatarAlt": "Foto de Bryan S. Oliveira",
     "roles": ["Desenvolvedor Frontend", "Vue.js & Nuxt", "Cientista da Computação"],
     "copyEmail": "Copiar email",
     "copied": "Email copiado!",

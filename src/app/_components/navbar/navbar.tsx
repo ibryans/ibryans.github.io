@@ -42,8 +42,8 @@ export default function Navbar() {
 
     return (
         
-        <div className={`fixed top-0 left-0 right-0 py-2 px-2 md:p-6 z-20 transition-colors duration-300 ${scrolled ? 'bg-white/80 dark:bg-black/70 backdrop-blur-md shadow-sm dark:shadow-white/5' : ''}`}>
-            <header className="flex items-center justify-between container mx-auto"> 
+        <header className={`fixed top-0 left-0 right-0 py-2 px-2 md:p-6 z-20 transition-colors duration-300 ${scrolled ? 'bg-white/80 dark:bg-black/70 backdrop-blur-md shadow-sm dark:shadow-white/5' : ''}`}>
+            <div className="flex items-center justify-between container mx-auto"> 
                 
                 <LanguageSwitcher/>
 
@@ -62,8 +62,8 @@ export default function Navbar() {
 
                 <ThemeToggle/>
 
-            </header>
-        </div>
+            </div>
+        </header>
         
     );
 }

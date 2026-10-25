@@ -1,5 +1,5 @@
 import { use } from "react";
-import { Locale } from "next-intl";
+import { Locale, useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Header } from "../_components/header/header";
 import { About } from "../_components/about/about";
@@ -12,15 +12,23 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
   const { locale } = use(params);
   // O layout já validou o idioma
   setRequestLocale(locale as Locale);
+  const t = useTranslations('nav');
 
   return (
-    <main className="dark:text-white text-black container mx-auto">
+    <>
+      <a
+        href="#content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-1/2 focus:-translate-x-1/2 focus:z-30 focus:px-4 focus:py-2 focus:rounded-full focus:bg-blue-600 focus:text-white">
+        {t('skipToContent')}
+      </a>
       <Navbar/>
-      <Header/>
-      <About/>
-      <Experiences/>
-      <Skills/>
+      <main id="content" className="container mx-auto">
+        <Header/>
+        <About/>
+        <Experiences/>
+        <Skills/>
+      </main>
       <Footer/>
-    </main>
+    </>
   );
 }

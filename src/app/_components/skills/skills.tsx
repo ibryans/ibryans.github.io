@@ -10,12 +10,12 @@ export function Skills() {
     const t = useTranslations('skills');
 
     return (
-        <div id="skills" className="flex justify-center items-center appear min-h-svh px-10 py-24">
-            <section className="w-full md:w-2/3">
-                <h3 className="text-sm font-extrabold text-blue-600 mb-2">
+        <section id="skills" aria-labelledby="skills-title" className="flex justify-center items-center appear min-h-svh px-10 py-24">
+            <div className="w-full md:w-2/3">
+                <p className="text-sm font-extrabold text-accent mb-2">
                     {t('label')}
-                </h3>
-                <h2 className="text-2xl font-bold">{t('title')}</h2>
+                </p>
+                <h2 id="skills-title" className="text-2xl font-bold">{t('title')}</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                     {skillGroups.map((group) => (
@@ -24,7 +24,7 @@ export function Skills() {
                             <ul className="flex flex-wrap gap-2">
                                 {group.skills.map(({ name, icon: Icon }) => (
                                     <li key={name} className="flex items-center gap-2 text-sm px-3 py-1 rounded-full bg-white dark:bg-black">
-                                        {Icon && <Icon className="text-blue-600"/>}
+                                        {Icon && <Icon aria-hidden="true" className="text-accent"/>}
                                         {name}
                                     </li>
                                 ))}
@@ -32,7 +32,7 @@ export function Skills() {
                         </div>
                     ))}
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }

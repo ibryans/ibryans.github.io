@@ -4,9 +4,10 @@
 
 @theme {
   --animate-spin-finite: spin 0.5s linear 1;
+  /* Cor de destaque para texto; no tema escuro fica mais clara para manter o contraste (WCAG AA) */
+  --color-accent: var(--color-blue-600);
 }
 
-/* O Tailwind 4 não aplica mais cursor pointer em botões por padrão */
 @layer base {
   :root {
     color-scheme: light;
@@ -16,8 +17,15 @@
 
   .dark {
     color-scheme: dark;
+    --color-accent: var(--color-blue-400);
   }
 
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* O Tailwind 4 não aplica mais cursor pointer em botões por padrão */
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
@@ -35,8 +43,13 @@
     }
 }
 
-.appear {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+/* Sem suporte a animation-timeline ou com movimento reduzido, o conteúdo aparece direto */
+@supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+        .appear {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    }
 }

@@ -16,7 +16,7 @@ export function NavbarItem({ text, href, active = false, className = '' }: Navba
         <a
             href={ href }
             aria-current={ active ? 'location' : undefined }
-            className={`hover:text-blue-600 transition duration-300 text-[13px] sm:text-lg ${active ? 'text-blue-600' : ''} ${className}`}>
+            className={`hover:text-accent transition duration-300 text-[13px] sm:text-lg ${active ? 'text-accent' : ''} ${className}`}>
             { text }
         </a>
     )
