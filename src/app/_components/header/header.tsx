@@ -25,7 +25,7 @@ export function Header() {
                 <div className="flex flex-col items-center sm:items-start">
                     <Image
                         alt='Plano de fundo'
-                        className='sm:hidden rounded-full w-1/2 sm:w-1/5 lg:w-1/5 2xl:w-1/10 mb-10'
+                        className='sm:hidden rounded-full w-1/2 sm:w-1/5 lg:w-1/5 mb-10'
                         src={avatar} />
                     
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-3">
@@ -70,12 +70,12 @@ export function Header() {
                 
                 <Image
                     alt='Plano de fundo'
-                    className='hidden sm:block rounded-full w-1/2 sm:w-1/3 lg:w-1/5 2xl:w-1/10 mb-10'
+                    className='hidden sm:block rounded-full w-1/2 sm:w-1/3 lg:w-1/5 mb-10'
                     src={avatar} />
                 
             </div>
 
-            <a href="#about" className="absolute bottom-0 left-[50%] w-100 mb-10 cursor-pointer">
+            <a href="#about" className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-10 cursor-pointer">
                <FaChevronCircleDown 
                     className="animate-bounce w-6 h-6 transition" 
                 /> 
