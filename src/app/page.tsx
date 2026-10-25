@@ -7,6 +7,7 @@
 
 import Link from "next/link";
 import { routing } from "@/i18n/routing";
+import { profile } from "./_data/profile";
 
 const redirectScript = `(function () {
   var locales = ${JSON.stringify(routing.locales)};
@@ -28,6 +29,10 @@ export default function RootPage() {
         <html lang={routing.defaultLocale}>
             <head>
                 <title>Bryan S. Oliveira</title>
+                {routing.locales.map((locale) => (
+                    <link key={locale} rel="alternate" hrefLang={locale} href={`${profile.url}/${locale}`} />
+                ))}
+                <link rel="alternate" hrefLang="x-default" href={`${profile.url}/`} />
                 <script dangerouslySetInnerHTML={{ __html: redirectScript }} />
                 <noscript>
                     <meta httpEquiv="refresh" content={`0; url=/${routing.defaultLocale}`} />

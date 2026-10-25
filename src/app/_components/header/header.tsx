@@ -115,6 +115,8 @@ export function Header() {
                 {/* No mobile a foto vem antes do nome; a partir do sm, fica à direita */}
                 <Image
                     alt={t('avatarAlt')}
+                    // É o maior elemento visível ao abrir a página (LCP)
+                    preload
                     className='order-first sm:order-last rounded-full w-1/2 sm:w-1/3 lg:w-1/5 mb-10'
                     src={avatar} />
 

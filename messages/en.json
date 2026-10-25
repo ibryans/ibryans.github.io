@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Bryan S. Oliveira · Frontend Developer",
+    "description": "Mid-level frontend developer from Belo Horizonte, Brazil, working with Vue 3, Nuxt and TypeScript. Experience, skills and contact.",
+    "ogLocale": "en_US"
+  },
   "nav": {
     "toggleTheme": "Toggle theme",
     "skipToContent": "Skip to content",

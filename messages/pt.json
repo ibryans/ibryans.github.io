@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Bryan S. Oliveira · Desenvolvedor Frontend",
+    "description": "Desenvolvedor frontend pleno de Belo Horizonte, trabalhando com Vue 3, Nuxt e TypeScript. Experiência, habilidades e contato.",
+    "ogLocale": "pt_BR"
+  },
   "nav": {
     "toggleTheme": "Alternar tema",
     "skipToContent": "Pular para o conteúdo",
