@@ -2,11 +2,14 @@
  * @author Bryan S. Oliveira
  * Botão que alterna entre /en e /pt, mantendo a seção atual (#hash)
  * A escolha fica salva para a raiz (/) redirecionar para o mesmo idioma depois
+ *
+ * A troca é um carregamento normal de página, não uma navegação do Next:
+ * /en e /pt são documentos estáticos com <html lang> próprio, e refazer o
+ * layout no cliente faria o React reclamar do <script> de tema no <head>
  */
 
 'use client'
 
-import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { FaGlobe } from "react-icons/fa";
 import { routing } from "@/i18n/routing";
@@ -14,15 +17,14 @@ import { routing } from "@/i18n/routing";
 export default function LanguageSwitcher() {
     const t = useTranslations('nav');
     const locale = useLocale();
-    const router = useRouter();
     const target = routing.locales.find((l) => l !== locale) ?? routing.defaultLocale;
 
     const switchLanguage = (event: React.MouseEvent<HTMLAnchorElement>) => {
-        event.preventDefault();
         try {
             localStorage.setItem('locale', target);
         } catch {}
-        router.push(`/${target}${window.location.hash}`);
+        // Mantém a seção atual; o navegador segue o href normalmente
+        event.currentTarget.href = `/${target}${window.location.hash}`;
     };
 
     return (
