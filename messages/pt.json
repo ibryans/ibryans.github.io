@@ -3,7 +3,8 @@
     "home": "Início",
     "about": "Sobre",
     "experiences": "Experiência",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "switchLanguage": "Mudar para inglês"
   },
   "header": {
     "roles": ["Desenvolvedor Frontend", "Vue.js & Nuxt", "Cientista da Computação"],

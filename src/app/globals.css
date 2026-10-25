@@ -10,6 +10,8 @@
 @layer base {
   :root {
     color-scheme: light;
+    /* Compensa a navbar fixa ao pular para uma seção */
+    scroll-padding-top: 5rem;
   }
 
   .dark {
