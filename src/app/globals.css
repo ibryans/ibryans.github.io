@@ -8,6 +8,14 @@
 
 /* O Tailwind 4 não aplica mais cursor pointer em botões por padrão */
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
