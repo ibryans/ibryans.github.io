@@ -14,8 +14,11 @@ import Image from 'next/image';
 import './header.css';
 import { ReactTyped } from "react-typed";
 import { FaBluesky } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
+import { profile } from "@/app/_data/profile";
 
 export function Header() {
+    const t = useTranslations('header');
 
     return (
         <div id="home" className='p-5 appear'>
@@ -29,12 +32,12 @@ export function Header() {
                         src={avatar} />
                     
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-3">
-                        Bryan S. Oliveira
+                        {profile.name}
                     </h1>
 
                     <h2 className="text-xl lg:text-2xl">
                         <ReactTyped
-                            strings={['Frontend Software Engineer', 'UX/UI designer', 'Computer Scientist']}
+                            strings={t.raw('roles') as string[]}
                             typeSpeed={50}
                             backSpeed={20}
                             loop
@@ -46,11 +49,11 @@ export function Header() {
                         {/* Email Tooltip */}
                         <div className="tooltip-container relative">
                             <span className="tooltip bg-slate-600 text-white">
-                                bsoliveira@proton.me
+                                {profile.email}
                             </span>
 
-                            <a href="mailto:bsoliveira@proton.me" className="px-5 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-full text-white flex space-x-5 items-center">
-                                <span>Contact me</span> 
+                            <a href={`mailto:${profile.email}`} className="px-5 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-full text-white flex space-x-5 items-center">
+                                <span>{t('contact')}</span> 
                                 <IoMdMail/>
                             </a> 
                         </div>
@@ -58,13 +61,13 @@ export function Header() {
 
                         <SocialButton 
                             icon={<FaLinkedinIn/>} 
-                            url="https://www.linkedin.com/in/ibryans/"/>
+                            url={profile.socials.linkedin}/>
                         <SocialButton 
                             icon={<FaBluesky/>} 
-                            url="https://bsky.app/profile/bsoliveira.com"/>
+                            url={profile.socials.bluesky}/>
                         <SocialButton
                             icon={<FaGithub/>}
-                            url="https://www.github.com/ibryans"/>
+                            url={profile.socials.github}/>
                     </div>
                 </div>
                 

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 import Icon from '@/assets/avatar.webp'
 
@@ -36,7 +37,9 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="icon" href={Icon.src} type="image/webp" />
       </head>
-      <body className={`${inter.className} bg-white dark:bg-black transition duration-500`}>{children}</body>
+      <body className={`${inter.className} bg-white dark:bg-black transition duration-500`}>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }

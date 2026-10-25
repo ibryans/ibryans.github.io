@@ -6,8 +6,10 @@
 import { NavbarItem } from "./navbar-item";
 import { FaGlobe } from "react-icons/fa";
 import ThemeToggle from "../theme-toggle/theme-toggle";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
+    const t = useTranslations('nav');
 
     return (
         
@@ -21,10 +23,10 @@ export default function Navbar() {
 
                 {/* Menu */}
                 <nav className='flex space-x-4 sm:space-x-10 justify-start'>
-                    <NavbarItem text="Home" href="#home"/>
-                    <NavbarItem text="About" href="#about"/>
-                    <NavbarItem text="Experiences" href="#experiences"/>
-                    <NavbarItem text="Projects" href="#projects"/>
+                    <NavbarItem text={t('home')} href="#home"/>
+                    <NavbarItem text={t('about')} href="#about"/>
+                    <NavbarItem text={t('experiences')} href="#experiences"/>
+                    <NavbarItem text={t('skills')} href="#skills"/>
                 </nav>
 
                 <ThemeToggle/>

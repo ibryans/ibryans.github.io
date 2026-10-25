@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experiences": "Experience",
+    "skills": "Skills"
+  },
+  "header": {
+    "roles": ["Frontend Developer", "Vue.js & Nuxt", "Computer Scientist"],
+    "contact": "Contact me"
+  },
+  "about": {
+    "label": "ABOUT ME",
+    "title": "Frontend developer from Belo Horizonte, Brazil 🇧🇷",
+    "bio": "Hi, my name is Bryan. I'm a mid-level frontend developer who has been building for the web since 2019. Today I work mainly with <b>Vue 3</b>, <b>Nuxt</b> and <b>TypeScript</b>, creating fast, accessible and scalable interfaces with <b>Tailwind CSS</b>, <b>PrimeVue</b>, <b>Vuetify</b> and <b>SASS</b>.",
+    "backend": "I also work close to the backend, integrating with <b>.NET Core (C#)</b> services and APIs and <b>SQL Server</b> and <b>PostgreSQL</b> databases, which gives me an end-to-end view of the application architecture.",
+    "education": "🎓 I hold a degree in Computer Science and a postgraduate degree in Distributed Systems Architecture, both from PUC Minas, and an IT technical diploma from UFMG's technical college (COLTEC). Along the way I also did Deep Learning research with Python."
+  },
+  "experiences": {
+    "label": "EXPERIENCE",
+    "title": "Where I've worked",
+    "present": "Present",
+    "readArticle": "Read the article",
+    "items": {
+      "bellosoft": {
+        "role": "Mid-level Frontend Developer",
+        "highlights": [
+          "Software development for international clients, mainly in England and Ireland.",
+          "Responsible for the frontend of .NET Core projects, using Vue.js, JavaScript, HTML, CSS and SASS.",
+          "Team and project management in Azure DevOps.",
+          "Collaboration through pull requests, code review, automated tests and QA."
+        ]
+      },
+      "petrobras": {
+        "role": "Deep Learning Researcher",
+        "highlights": [
+          "Petrobras scientific research project in partnership with UFMG.",
+          "Implemented and trained convolutional neural networks for seismic image segmentation.",
+          "Built Python GUIs for 2D and 3D visualization of seismic data.",
+          "Contributed to a review article published in Earth-Science Reviews."
+        ]
+      },
+      "pluritech": {
+        "role": "Frontend Developer Intern",
+        "highlights": [
+          "Frontend development of business software.",
+          "Angular, React, Ionic and React Native, with external API and payment gateway integrations.",
+          "Some backend tasks with NestJS, TypeORM and PostgreSQL.",
+          "Agile with Trello; version control with Git and GitLab."
+        ]
+      },
+      "ccates": {
+        "role": "Researcher and Frontend Developer",
+        "highlights": [
+          "Software development for a UFMG health research group.",
+          "Angular for websites, Ionic for mobile apps and Figma for UX/UI.",
+          "Design Sprints, agile with Trello and Jira, version control with GitLab."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "label": "SKILLS",
+    "title": "Technologies I work with",
+    "groups": {
+      "frontend": "Frontend",
+      "state": "State & data fetching",
+      "quality": "Quality & testing",
+      "offline": "Accessibility & offline",
+      "backend": "Backend & databases",
+      "tools": "Tooling & CI/CD"
+    }
+  },
+  "footer": {
+    "rights": "© {year} Bryan S. Oliveira"
+  }
+}
