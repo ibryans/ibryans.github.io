@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --animate-spin-finite: spin 0.5s linear 1;
+}
+
+/* O Tailwind 4 não aplica mais cursor pointer em botões por padrão */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
 
 @keyframes appear {
     from {

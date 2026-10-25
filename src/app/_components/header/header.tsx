@@ -18,7 +18,7 @@ export function Header() {
     return (
         <div id="home" className='p-5 appear'>
             <div 
-                className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-20 md:space-x-40 h-[100vh] -mt-5">
+                className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-20 md:space-x-40 h-screen -mt-5">
 
                 <div className="flex flex-col items-center sm:items-start">
                     <Image
