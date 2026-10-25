@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
             onClick={switchLanguage}
             aria-label={t('switchLanguage')}
             title={t('switchLanguage')}
-            className="flex space-x-2 items-center group p-2 rounded-full transition text-sm sm:text-base hover:text-blue-600">
+            className="flex space-x-1.5 sm:space-x-2 items-center group p-1 sm:p-2 rounded-full transition text-[13px] sm:text-base hover:text-blue-600">
             <FaGlobe className="group-hover:animate-spin"/>
             <b>{locale.toUpperCase()}</b>
         </a>

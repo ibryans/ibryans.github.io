@@ -44,7 +44,7 @@ export default function ThemeToggle() {
         <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-full hover:text-blue-600 transition">
+            className="p-1 sm:p-2 rounded-full hover:text-blue-600 transition">
             <FiMoon className="dark:hidden w-5 h-5 hover:animate-spin-finite"/>
             <FiSun className="hidden dark:block w-5 h-5 hover:animate-spin-finite"/>
         </button>

@@ -48,9 +48,15 @@ export default function Navbar() {
                 <LanguageSwitcher/>
 
                 {/* Menu */}
-                <nav className='flex space-x-3 sm:space-x-10 justify-start'>
+                <nav className='flex space-x-2.5 sm:space-x-10 justify-start'>
                     {sections.map((id) => (
-                        <NavbarItem key={id} text={t(id)} href={`#${id}`} active={active === id}/>
+                        <NavbarItem
+                            key={id}
+                            text={t(id)}
+                            href={`#${id}`}
+                            active={active === id}
+                            // Em telas muito estreitas não cabem todos os links; o topo fica a uma rolagem
+                            className={id === 'home' ? 'max-[359px]:hidden' : ''}/>
                     ))}
                 </nav>
 

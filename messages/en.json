@@ -8,6 +8,9 @@
   },
   "header": {
     "roles": ["Frontend Developer", "Vue.js & Nuxt", "Computer Scientist"],
+    "copyEmail": "Copy email",
+    "copied": "Email copied!",
+    "scrollDown": "Go to About",
     "contact": "Contact me"
   },
   "about": {

@@ -6,7 +6,9 @@
  * (Plano de fundo, nome, descrição) 
 */
 
+import { useState } from "react";
 import { FaChevronCircleDown, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FiCheck, FiCopy } from "react-icons/fi";
 import avatar from '@/assets/avatar.webp'
 import { IoMdMail } from 'react-icons/io';
 import SocialButton from '../social-button/social-button';
@@ -19,6 +21,16 @@ import { profile } from "@/app/_data/profile";
 
 export function Header() {
     const t = useTranslations('header');
+    const [copied, setCopied] = useState(false);
+
+    // No celular não existe hover para ver o email no tooltip, então dá para copiar
+    const copyEmail = async () => {
+        try {
+            await navigator.clipboard.writeText(profile.email);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        } catch {}
+    };
 
     return (
         <div id="home" className='p-5 appear'>
@@ -57,7 +69,14 @@ export function Header() {
                                 <IoMdMail/>
                             </a> 
                         </div>
-                        
+
+                        <button
+                            onClick={copyEmail}
+                            aria-label={t('copyEmail')}
+                            title={t('copyEmail')}
+                            className="bg-transparent rounded-lg p-2 hover:bg-blue-600 hover:text-white transition duration-300">
+                            {copied ? <FiCheck/> : <FiCopy/>}
+                        </button>
 
                         <SocialButton 
                             icon={<FaLinkedinIn/>} 
@@ -69,6 +88,10 @@ export function Header() {
                             icon={<FaGithub/>}
                             url={profile.socials.github}/>
                     </div>
+
+                    <span role="status" className="h-6 mt-3 text-sm text-blue-600">
+                        {copied && t('copied')}
+                    </span>
                 </div>
                 
                 <Image
@@ -78,7 +101,7 @@ export function Header() {
                 
             </div>
 
-            <a href="#about" className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-10 cursor-pointer">
+            <a href="#about" aria-label={t('scrollDown')} className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-10 cursor-pointer">
                <FaChevronCircleDown 
                     className="animate-bounce w-6 h-6 transition" 
                 /> 

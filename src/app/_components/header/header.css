@@ -26,7 +26,8 @@
     border-bottom-right-radius: 0.175rem;
 }
   
-.tooltip-container:hover .tooltip {
+.tooltip-container:hover .tooltip,
+.tooltip-container:focus-within .tooltip {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
